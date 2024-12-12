@@ -1,0 +1,6 @@
+broker_url: amqp://127.0.0.1:5672
+log_level: INFO
+log_path: server.log
+request_queue: requests_queue
+response_queue: responses_queue
+uuid: None

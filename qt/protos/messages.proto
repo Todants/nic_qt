@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+package TestTask.Messages;
+
+
+
+message Request {
+
+	required string return_address = 1;
+
+        required string request_id = 2;
+
+        optional float proccess_time_in_seconds = 3;
+
+	required int32 request = 4;
+
+}
+
+
+
+message Response {
+
+        required string request_id = 1;
+
+	required int32 response = 2;
+
+}

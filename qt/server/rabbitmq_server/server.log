@@ -1,0 +1,1230 @@
+2024-11-27 14:38:31,439 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "6e17ca1f-2c2b-4554-94bc-316efbf43358"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 14:38:36,448 [INFO] Ответ отправлен в responses_queue: {'request_id': '6e17ca1f-2c2b-4554-94bc-316efbf43358', 'response': 20}
+2024-11-27 14:39:16,159 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "3807c9a9-d60d-4681-a925-bbea443f0b55"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 14:39:21,171 [INFO] Ответ отправлен в responses_queue: {'request_id': '3807c9a9-d60d-4681-a925-bbea443f0b55', 'response': 20}
+2024-11-27 15:24:16,238 [INFO] Сервер готов принимать запросы
+2024-11-27 15:24:36,451 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "cb4f303c-b72d-483a-bce7-dfa268bcdca5"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:24:41,455 [ERROR] Exception in callback _task_done(<Task finishe...not defined")>) at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:35
+handle: <Handle _task_done(<Task finishe...not defined")>) at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:35>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py", line 39, in _task_done
+    raise exc
+  File "/home/user/PycharmProjects/qt/server/rabbitmq_server/__main__.py", line 48, in handle_request
+    await exchange.publish(
+NameError: name 'exchange' is not defined
+2024-11-27 15:24:41,460 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<consumer() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/queue.py:28> exception=NameError("name 'exchange' is not defined")>
+Traceback (most recent call last):
+  File "/home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/queue.py", line 34, in consumer
+    return await create_task(callback, message)
+  File "/home/user/PycharmProjects/qt/server/rabbitmq_server/__main__.py", line 48, in handle_request
+    await exchange.publish(
+NameError: name 'exchange' is not defined
+2024-11-27 15:24:59,122 [INFO] Сервер готов принимать запросы
+2024-11-27 15:25:03,829 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "ccc40722-411d-4647-967f-9131829a16c2"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:25:08,839 [INFO] Ответ отправлен в responses_queue: {'request_id': 'ccc40722-411d-4647-967f-9131829a16c2', 'response': 20}
+2024-11-27 15:42:57,666 [INFO] Сервер готов принимать запросы
+2024-11-27 15:42:57,667 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "dedea6b0-c910-40e4-9fde-60ad66e7e851"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:43:02,677 [INFO] Ответ отправлен в responses_queue: {'request_id': 'dedea6b0-c910-40e4-9fde-60ad66e7e851', 'response': 20}
+2024-11-27 15:48:41,431 [INFO] Сервер готов принимать запросы
+2024-11-27 15:48:43,691 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "560c29b9-f3a1-45b3-ab1d-0a8f7eee2df1"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:48:48,700 [INFO] Ответ отправлен в responses_queue: {'request_id': '560c29b9-f3a1-45b3-ab1d-0a8f7eee2df1', 'response': 20}
+2024-11-27 15:51:45,640 [INFO] Сервер готов принимать запросы
+2024-11-27 15:52:38,504 [INFO] Сервер готов принимать запросы
+2024-11-27 15:52:40,424 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "7110c019-d171-429b-adfb-467b6f50a9d8"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:52:45,432 [INFO] Ответ отправлен в responses_queue: {'request_id': '7110c019-d171-429b-adfb-467b6f50a9d8', 'response': 20}
+2024-11-27 15:53:32,027 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "45dda71d-7229-41c3-9a2c-0014dad76879"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:53:34,486 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "eb4574b0-9c8e-4a66-baf3-06272e35c176"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:53:37,037 [INFO] Ответ отправлен в responses_queue: {'request_id': '45dda71d-7229-41c3-9a2c-0014dad76879', 'response': 20}
+2024-11-27 15:53:39,493 [INFO] Ответ отправлен в responses_queue: {'request_id': 'eb4574b0-9c8e-4a66-baf3-06272e35c176', 'response': 20}
+2024-11-27 15:53:59,791 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "6f91fce0-c2b9-40db-93a3-edd17c4bb535"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:54:00,856 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "9b50db26-a766-401b-a0ae-74558ee7d235"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:54:01,326 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "28308325-5348-4eee-ac3f-0fbb21534ffa"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:54:04,801 [INFO] Ответ отправлен в responses_queue: {'request_id': '6f91fce0-c2b9-40db-93a3-edd17c4bb535', 'response': 20}
+2024-11-27 15:54:05,863 [INFO] Ответ отправлен в responses_queue: {'request_id': '9b50db26-a766-401b-a0ae-74558ee7d235', 'response': 20}
+2024-11-27 15:54:06,333 [INFO] Ответ отправлен в responses_queue: {'request_id': '28308325-5348-4eee-ac3f-0fbb21534ffa', 'response': 20}
+2024-11-27 15:55:16,793 [INFO] Сервер готов принимать запросы
+2024-11-27 15:55:35,709 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "0cb8ffc0-cead-4c71-8ced-9125533c566f"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:55:40,721 [INFO] Ответ отправлен в responses_queue: {'request_id': '0cb8ffc0-cead-4c71-8ced-9125533c566f', 'response': 20}
+2024-11-27 15:55:45,537 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "8d9261e6-8f57-49ee-a0d5-badcf62c57c7"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:55:50,547 [INFO] Ответ отправлен в responses_queue: {'request_id': '8d9261e6-8f57-49ee-a0d5-badcf62c57c7', 'response': 20}
+2024-11-27 15:56:25,993 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "52954206-2af8-4924-9dc9-bc6a0e4f3d34"
+proccess_time_in_seconds: 10
+request: 10
+
+2024-11-27 15:56:36,007 [INFO] Ответ отправлен в responses_queue: {'request_id': '52954206-2af8-4924-9dc9-bc6a0e4f3d34', 'response': 20}
+2024-11-27 15:56:36,020 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "c8f502fc-854c-4a2d-a3ec-61a6eb7e018d"
+proccess_time_in_seconds: 5
+request: 10
+
+2024-11-27 15:56:41,028 [INFO] Ответ отправлен в responses_queue: {'request_id': 'c8f502fc-854c-4a2d-a3ec-61a6eb7e018d', 'response': 20}
+2024-11-27 15:56:41,041 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "27caa7b4-e6d1-452f-8aa9-f2580e93fa0c"
+proccess_time_in_seconds: 2
+request: 10
+
+2024-11-27 15:56:43,050 [INFO] Ответ отправлен в responses_queue: {'request_id': '27caa7b4-e6d1-452f-8aa9-f2580e93fa0c', 'response': 20}
+2024-11-27 15:58:58,526 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "8a066c54-58c4-47a1-8e75-25fd2eece833"
+proccess_time_in_seconds: 7
+request: 10
+
+2024-11-27 15:58:58,530 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "0810f5f1-7f41-4519-bdbc-cf8c3be1b41d"
+proccess_time_in_seconds: 3
+request: 30
+
+2024-11-27 15:58:58,531 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "e35afb94-5934-4d41-8162-a3e4d4bf29c8"
+proccess_time_in_seconds: 5
+request: 20
+
+2024-11-27 15:59:01,540 [INFO] Ответ отправлен в responses_queue: {'request_id': '0810f5f1-7f41-4519-bdbc-cf8c3be1b41d', 'response': 60}
+2024-11-27 15:59:03,538 [INFO] Ответ отправлен в responses_queue: {'request_id': 'e35afb94-5934-4d41-8162-a3e4d4bf29c8', 'response': 40}
+2024-11-27 15:59:05,534 [INFO] Ответ отправлен в responses_queue: {'request_id': '8a066c54-58c4-47a1-8e75-25fd2eece833', 'response': 20}
+2024-12-04 12:10:26,445 [INFO] Сервер готов принимать запросы
+2024-12-04 12:10:38,584 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "2b2d0022-e7f3-438d-8e23-79573b20ad7f"
+proccess_time_in_seconds: 7
+request: 10
+
+2024-12-04 12:10:45,597 [INFO] Ответ отправлен в responses_queue: {'request_id': '2b2d0022-e7f3-438d-8e23-79573b20ad7f', 'response': 20}
+2024-12-04 12:10:45,608 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "18a4d786-5a70-482f-890d-1f01a8baf9a5"
+proccess_time_in_seconds: 5
+request: 20
+
+2024-12-04 12:10:50,620 [INFO] Ответ отправлен в responses_queue: {'request_id': '18a4d786-5a70-482f-890d-1f01a8baf9a5', 'response': 40}
+2024-12-04 12:10:50,633 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "8190fe04-a7f0-4231-99ed-83972a9c11bb"
+proccess_time_in_seconds: 3
+request: 30
+
+2024-12-04 12:10:53,644 [INFO] Ответ отправлен в responses_queue: {'request_id': '8190fe04-a7f0-4231-99ed-83972a9c11bb', 'response': 60}
+2024-12-04 12:12:15,905 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "530b1d3b-89fa-4661-8042-795a41272744"
+proccess_time_in_seconds: 7
+request: 10
+
+2024-12-04 12:12:22,914 [INFO] Ответ отправлен в responses_queue: {'request_id': '530b1d3b-89fa-4661-8042-795a41272744', 'response': 20}
+2024-12-04 12:12:22,933 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "ae95838c-7499-42a6-93a1-859596bbd617"
+proccess_time_in_seconds: 5
+request: 20
+
+2024-12-04 12:12:27,940 [INFO] Ответ отправлен в responses_queue: {'request_id': 'ae95838c-7499-42a6-93a1-859596bbd617', 'response': 40}
+2024-12-04 12:12:27,953 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "8235f583-43c1-47f5-b805-eb12ba0a33c6"
+proccess_time_in_seconds: 3
+request: 30
+
+2024-12-04 12:12:30,962 [INFO] Ответ отправлен в responses_queue: {'request_id': '8235f583-43c1-47f5-b805-eb12ba0a33c6', 'response': 60}
+2024-12-04 13:00:32,198 [INFO] Получен запрос return_address: "719bbb9f-f06c-48ef-bb78-2625c6f1e698"
+request_id: "1c37e7cd-9a51-4d3c-aa08-6efface45d5a"
+request: 12
+
+2024-12-04 13:00:32,205 [INFO] Ответ отправлен в 719bbb9f-f06c-48ef-bb78-2625c6f1e698: {'request_id': '1c37e7cd-9a51-4d3c-aa08-6efface45d5a', 'response': 24}
+2024-12-04 13:04:02,867 [INFO] Получен запрос return_address: "d6b59f8e-8119-4140-ba36-c107c11815ba"
+request_id: "2a9a5e43-8923-45fa-9567-94959b9e866f"
+request: 12
+
+2024-12-04 13:04:02,872 [INFO] Ответ отправлен в d6b59f8e-8119-4140-ba36-c107c11815ba: {'request_id': '2a9a5e43-8923-45fa-9567-94959b9e866f', 'response': 24}
+2024-12-04 13:05:48,480 [INFO] Получен запрос return_address: "a0ec037e-3357-4880-934a-fff9aad1b57e"
+request_id: "8d9e5116-9121-46ff-a5c9-1d82edf7291b"
+request: 12
+
+2024-12-04 13:05:48,487 [INFO] Ответ отправлен в a0ec037e-3357-4880-934a-fff9aad1b57e: {'request_id': '8d9e5116-9121-46ff-a5c9-1d82edf7291b', 'response': 24}
+2024-12-04 13:12:17,340 [INFO] Получен запрос return_address: "b296471f-97ae-4211-9fa6-43fe5c85983c"
+request_id: "1a36d87f-9854-4191-a072-ca73487e47fe"
+request: 12
+
+2024-12-04 13:12:17,345 [INFO] Ответ отправлен в b296471f-97ae-4211-9fa6-43fe5c85983c: {'request_id': '1a36d87f-9854-4191-a072-ca73487e47fe', 'response': 24}
+2024-12-04 13:12:54,441 [INFO] Получен запрос return_address: "f304c9c0-f628-4a0b-83de-50f87a391a08"
+request_id: "fadbac7d-de34-4d4b-a33d-bfbbaea7de83"
+request: 2
+
+2024-12-04 13:12:54,447 [INFO] Ответ отправлен в f304c9c0-f628-4a0b-83de-50f87a391a08: {'request_id': 'fadbac7d-de34-4d4b-a33d-bfbbaea7de83', 'response': 4}
+2024-12-04 13:13:09,634 [INFO] Получен запрос return_address: "f304c9c0-f628-4a0b-83de-50f87a391a08"
+request_id: "6b227900-564f-40eb-bea3-923fb8650be6"
+proccess_time_in_seconds: 2
+request: 3
+
+2024-12-04 13:13:11,646 [INFO] Ответ отправлен в f304c9c0-f628-4a0b-83de-50f87a391a08: {'request_id': '6b227900-564f-40eb-bea3-923fb8650be6', 'response': 6}
+2024-12-04 13:27:49,861 [INFO] Получен запрос return_address: "8c824aa0-0e20-4012-8dc2-e3847fc7e4cd"
+request_id: "6a296c40-3ed7-430c-8a2f-550a2b06b538"
+proccess_time_in_seconds: 5
+request: 3
+
+2024-12-04 13:27:54,869 [INFO] Ответ отправлен в 8c824aa0-0e20-4012-8dc2-e3847fc7e4cd: {'request_id': '6a296c40-3ed7-430c-8a2f-550a2b06b538', 'response': 6}
+2024-12-04 13:49:13,586 [INFO] Получен запрос return_address: "57f61d4c-a1b2-4691-a775-8796576c9107"
+request_id: "d8af6bb2-14b9-4c26-b63a-11baf8d33a88"
+request: 2
+
+2024-12-04 13:49:13,592 [INFO] Ответ отправлен в 57f61d4c-a1b2-4691-a775-8796576c9107: {'request_id': 'd8af6bb2-14b9-4c26-b63a-11baf8d33a88', 'response': 4}
+2024-12-04 13:50:01,565 [INFO] Получен запрос return_address: "f3bc9e9a-59e3-4bfd-a997-973a6c6ad7fb"
+request_id: "ac436366-cfa3-49cb-81d9-597f8455182b"
+request: 123
+
+2024-12-04 13:50:01,571 [INFO] Ответ отправлен в f3bc9e9a-59e3-4bfd-a997-973a6c6ad7fb: {'request_id': 'ac436366-cfa3-49cb-81d9-597f8455182b', 'response': 246}
+2024-12-04 13:53:14,563 [INFO] Получен запрос return_address: "4eb22eea-16bb-46ad-9fcd-fca04301773a"
+request_id: "61790072-907c-40ac-b966-25b048b95511"
+request: 12
+
+2024-12-04 13:53:14,570 [INFO] Ответ отправлен в 4eb22eea-16bb-46ad-9fcd-fca04301773a: {'request_id': '61790072-907c-40ac-b966-25b048b95511', 'response': 24}
+2024-12-04 13:54:00,584 [INFO] Получен запрос return_address: "6545401a-9e18-4980-a087-2718d068208f"
+request_id: "243d9be8-beed-495e-b289-fd08a24a3ed2"
+request: 23
+
+2024-12-04 13:54:00,591 [INFO] Ответ отправлен в 6545401a-9e18-4980-a087-2718d068208f: {'request_id': '243d9be8-beed-495e-b289-fd08a24a3ed2', 'response': 46}
+2024-12-04 13:58:00,685 [INFO] Получен запрос return_address: "e03db60e-bc43-4350-9905-a88a212243b7"
+request_id: "83b6525e-921a-4b4f-8441-47dfbbff1eb5"
+request: 12
+
+2024-12-04 13:58:00,691 [INFO] Ответ отправлен в e03db60e-bc43-4350-9905-a88a212243b7: {'request_id': '83b6525e-921a-4b4f-8441-47dfbbff1eb5', 'response': 24}
+2024-12-04 13:58:15,693 [INFO] Получен запрос return_address: "b0282d35-d6f2-4645-b43f-1a8829558ecd"
+request_id: "86d4ac62-1726-4621-84d8-2852e2a87868"
+request: 2
+
+2024-12-04 13:58:15,700 [INFO] Ответ отправлен в b0282d35-d6f2-4645-b43f-1a8829558ecd: {'request_id': '86d4ac62-1726-4621-84d8-2852e2a87868', 'response': 4}
+2024-12-04 13:58:33,836 [INFO] Получен запрос return_address: "e4f29c8e-ccea-4319-88b7-7ac5e61be1aa"
+request_id: "a7b48533-01fb-453c-9dbf-e66abe019a20"
+request: 2
+
+2024-12-04 13:58:33,841 [INFO] Ответ отправлен в e4f29c8e-ccea-4319-88b7-7ac5e61be1aa: {'request_id': 'a7b48533-01fb-453c-9dbf-e66abe019a20', 'response': 4}
+2024-12-04 13:58:48,457 [INFO] Получен запрос return_address: "210bc9af-3e80-417b-97ff-5b4c8dc429d3"
+request_id: "b95a39ec-1ab3-42db-8bdd-7ecba1d797e0"
+request: 2
+
+2024-12-04 13:58:48,463 [INFO] Ответ отправлен в 210bc9af-3e80-417b-97ff-5b4c8dc429d3: {'request_id': 'b95a39ec-1ab3-42db-8bdd-7ecba1d797e0', 'response': 4}
+2024-12-04 14:01:34,044 [INFO] Получен запрос return_address: "51e912e7-3539-42e6-abad-39fcaccdd7f4"
+request_id: "e82c0a6c-4935-4a3c-b251-8804c3fd22c9"
+request: 213
+
+2024-12-04 14:01:34,052 [INFO] Ответ отправлен в 51e912e7-3539-42e6-abad-39fcaccdd7f4: {'request_id': 'e82c0a6c-4935-4a3c-b251-8804c3fd22c9', 'response': 426}
+2024-12-04 14:02:13,451 [INFO] Получен запрос return_address: "91266fd3-2080-428c-a4e6-67586ffabb57"
+request_id: "e39f6031-d9a4-47fe-a9bf-08ae9615dfa2"
+request: 123
+
+2024-12-04 14:02:13,456 [INFO] Ответ отправлен в 91266fd3-2080-428c-a4e6-67586ffabb57: {'request_id': 'e39f6031-d9a4-47fe-a9bf-08ae9615dfa2', 'response': 246}
+2024-12-04 14:03:29,135 [INFO] Получен запрос return_address: "170fbe84-f4b1-4510-835c-7e959f055031"
+request_id: "52b54252-1817-4ac7-950b-c7c10f45de5f"
+request: 234
+
+2024-12-04 14:03:29,140 [INFO] Ответ отправлен в 170fbe84-f4b1-4510-835c-7e959f055031: {'request_id': '52b54252-1817-4ac7-950b-c7c10f45de5f', 'response': 468}
+2024-12-04 14:15:40,707 [INFO] Получен запрос return_address: "6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15"
+request_id: "11f097d3-8ed3-403c-9906-9965f89015fb"
+proccess_time_in_seconds: 5
+request: 213
+
+2024-12-04 14:15:45,717 [INFO] Ответ отправлен в 6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15: {'request_id': '11f097d3-8ed3-403c-9906-9965f89015fb', 'response': 426}
+2024-12-04 14:16:13,198 [INFO] Получен запрос return_address: "6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15"
+request_id: "c361d9c7-aee1-4c34-b7c7-263d113954ff"
+proccess_time_in_seconds: 5
+request: 213
+
+2024-12-04 14:16:18,206 [INFO] Ответ отправлен в 6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15: {'request_id': 'c361d9c7-aee1-4c34-b7c7-263d113954ff', 'response': 426}
+2024-12-04 14:16:20,453 [INFO] Получен запрос return_address: "6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15"
+request_id: "ee87c775-27a1-4e3d-b896-de70f921ec4f"
+proccess_time_in_seconds: 5
+request: 213
+
+2024-12-04 14:16:25,464 [INFO] Ответ отправлен в 6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15: {'request_id': 'ee87c775-27a1-4e3d-b896-de70f921ec4f', 'response': 426}
+2024-12-04 14:18:06,895 [INFO] Получен запрос return_address: "6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15"
+request_id: "ca67a601-6c81-4044-af27-00ac96013be1"
+proccess_time_in_seconds: 5
+request: 12
+
+2024-12-04 14:18:11,902 [INFO] Ответ отправлен в 6d988e8d-8d2c-4f92-a8ef-f55ed37d9c15: {'request_id': 'ca67a601-6c81-4044-af27-00ac96013be1', 'response': 24}
+2024-12-04 14:27:07,048 [INFO] Получен запрос return_address: "fff23c3f-215e-411c-a822-e8ecc5c6fc92"
+request_id: "c53e2c51-72ad-485a-ac87-e48f82915b9b"
+request: 23
+
+2024-12-04 14:27:07,055 [INFO] Ответ отправлен в fff23c3f-215e-411c-a822-e8ecc5c6fc92: {'request_id': 'c53e2c51-72ad-485a-ac87-e48f82915b9b', 'response': 46}
+2024-12-04 14:27:48,341 [INFO] Получен запрос return_address: "fff23c3f-215e-411c-a822-e8ecc5c6fc92"
+request_id: "450d7f87-d505-4a5c-8818-a462f255c391"
+request: 23
+
+2024-12-04 14:27:48,349 [INFO] Ответ отправлен в fff23c3f-215e-411c-a822-e8ecc5c6fc92: {'request_id': '450d7f87-d505-4a5c-8818-a462f255c391', 'response': 46}
+2024-12-04 14:28:34,753 [INFO] Получен запрос return_address: "55cadabf-25c6-4305-814e-67c3428da0ba"
+request_id: "9525e01a-2986-40a1-a8d3-d5b77e5c8aec"
+request: 546
+
+2024-12-04 14:28:34,759 [INFO] Ответ отправлен в 55cadabf-25c6-4305-814e-67c3428da0ba: {'request_id': '9525e01a-2986-40a1-a8d3-d5b77e5c8aec', 'response': 1092}
+2024-12-04 14:28:36,499 [INFO] Получен запрос return_address: "55cadabf-25c6-4305-814e-67c3428da0ba"
+request_id: "40eb370f-9855-418a-8c47-65d62bf46fad"
+request: 546
+
+2024-12-04 14:28:36,505 [INFO] Ответ отправлен в 55cadabf-25c6-4305-814e-67c3428da0ba: {'request_id': '40eb370f-9855-418a-8c47-65d62bf46fad', 'response': 1092}
+2024-12-04 14:28:45,500 [INFO] Получен запрос return_address: "55cadabf-25c6-4305-814e-67c3428da0ba"
+request_id: "2324a769-ea89-4c33-a881-4f1e8c3449c3"
+proccess_time_in_seconds: 2
+request: 23
+
+2024-12-04 14:28:47,508 [INFO] Ответ отправлен в 55cadabf-25c6-4305-814e-67c3428da0ba: {'request_id': '2324a769-ea89-4c33-a881-4f1e8c3449c3', 'response': 46}
+2024-12-04 14:28:56,029 [INFO] Получен запрос return_address: "55cadabf-25c6-4305-814e-67c3428da0ba"
+request_id: "df3bbe6d-97a0-4f43-8fe0-516767f83a3c"
+proccess_time_in_seconds: 2
+request: 23
+
+2024-12-04 14:28:58,037 [INFO] Ответ отправлен в 55cadabf-25c6-4305-814e-67c3428da0ba: {'request_id': 'df3bbe6d-97a0-4f43-8fe0-516767f83a3c', 'response': 46}
+2024-12-04 14:36:11,832 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "9c73425e-77ed-4abb-ae75-f4ee4e324187"
+proccess_time_in_seconds: 1
+request: 34
+
+2024-12-04 14:36:12,848 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': '9c73425e-77ed-4abb-ae75-f4ee4e324187', 'response': 68}
+2024-12-04 14:36:16,944 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "f2c2fb6c-a94f-43f1-a9c2-e0b2a752db01"
+proccess_time_in_seconds: 1
+request: 234
+
+2024-12-04 14:36:17,951 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'f2c2fb6c-a94f-43f1-a9c2-e0b2a752db01', 'response': 468}
+2024-12-04 14:38:31,194 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "8e334524-65a6-454c-ae84-36bac13dc7d4"
+proccess_time_in_seconds: 1
+request: 234
+
+2024-12-04 14:38:32,202 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': '8e334524-65a6-454c-ae84-36bac13dc7d4', 'response': 468}
+2024-12-04 14:39:45,160 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "afc4def5-99fb-40ba-b320-b95bf817940a"
+proccess_time_in_seconds: 1
+request: 234
+
+2024-12-04 14:39:46,166 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'afc4def5-99fb-40ba-b320-b95bf817940a', 'response': 468}
+2024-12-04 14:39:57,206 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "a7d8add9-d76f-4397-9a2d-558db2464ebd"
+proccess_time_in_seconds: 5
+request: 3
+
+2024-12-04 14:40:02,218 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'a7d8add9-d76f-4397-9a2d-558db2464ebd', 'response': 6}
+2024-12-04 14:51:31,373 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "b89e8cc8-838d-4447-8174-5eeef151f240"
+request: 6
+
+2024-12-04 14:51:31,380 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'b89e8cc8-838d-4447-8174-5eeef151f240', 'response': 12}
+2024-12-04 14:51:41,095 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "0b3ca0c7-d69c-49b5-bfcf-07374df3ee8b"
+proccess_time_in_seconds: 1
+request: 7
+
+2024-12-04 14:51:42,103 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': '0b3ca0c7-d69c-49b5-bfcf-07374df3ee8b', 'response': 14}
+2024-12-04 14:51:50,872 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "94870c59-5cc9-41f1-9556-ad65e8af2aac"
+proccess_time_in_seconds: 5
+request: 8
+
+2024-12-04 14:51:55,879 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': '94870c59-5cc9-41f1-9556-ad65e8af2aac', 'response': 16}
+2024-12-04 14:57:08,464 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "118a7654-6965-4293-a561-95df5c5d60d4"
+proccess_time_in_seconds: 5
+request: 9
+
+2024-12-04 14:57:13,472 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': '118a7654-6965-4293-a561-95df5c5d60d4', 'response': 18}
+2024-12-04 14:57:24,245 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "e6de86e9-2d07-42b1-b16b-97b2559f81f1"
+proccess_time_in_seconds: 5
+request: 9
+
+2024-12-04 14:57:29,252 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'e6de86e9-2d07-42b1-b16b-97b2559f81f1', 'response': 18}
+2024-12-04 15:03:11,496 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "d7f35202-47fa-4fc0-8a70-90cf3a9ffb25"
+proccess_time_in_seconds: 5
+request: 11
+
+2024-12-04 15:03:16,509 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'd7f35202-47fa-4fc0-8a70-90cf3a9ffb25', 'response': 22}
+2024-12-04 15:05:26,551 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "d01eeb33-d58e-4c81-a5ec-a336e3758d63"
+proccess_time_in_seconds: 5
+request: 11
+
+2024-12-04 15:05:31,558 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': 'd01eeb33-d58e-4c81-a5ec-a336e3758d63', 'response': 22}
+2024-12-04 15:05:45,892 [INFO] Получен запрос return_address: "a38c7d8b-6113-4caf-bc62-f8fec54658b4"
+request_id: "8d18b19d-1a6e-4496-b6a0-51874031d2b8"
+proccess_time_in_seconds: 5
+request: 11
+
+2024-12-04 15:05:50,900 [INFO] Ответ отправлен в a38c7d8b-6113-4caf-bc62-f8fec54658b4: {'request_id': '8d18b19d-1a6e-4496-b6a0-51874031d2b8', 'response': 22}
+2024-12-04 15:19:25,942 [INFO] Получен запрос return_address: "e2abd57d-9e1f-4f40-a52a-3a4798da4f17"
+request_id: "facf87d7-b0d2-4492-a4c7-314e390b02e2"
+request: 435
+
+2024-12-04 15:19:25,949 [INFO] Ответ отправлен в e2abd57d-9e1f-4f40-a52a-3a4798da4f17: {'request_id': 'facf87d7-b0d2-4492-a4c7-314e390b02e2', 'response': 870}
+2024-12-04 15:19:36,710 [INFO] Получен запрос return_address: "e2abd57d-9e1f-4f40-a52a-3a4798da4f17"
+request_id: "c3cd9251-575f-4734-bce6-ce312252b224"
+proccess_time_in_seconds: 5
+request: 12
+
+2024-12-04 15:19:41,721 [INFO] Ответ отправлен в e2abd57d-9e1f-4f40-a52a-3a4798da4f17: {'request_id': 'c3cd9251-575f-4734-bce6-ce312252b224', 'response': 24}
+2024-12-04 15:26:05,311 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "b9900932-3f92-4a3d-82b5-7f2f3275c474"
+request: 0
+
+2024-12-04 15:26:05,317 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': 'b9900932-3f92-4a3d-82b5-7f2f3275c474', 'response': 0}
+2024-12-04 15:26:55,346 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "9172c901-766a-4534-9c0c-6551295db836"
+proccess_time_in_seconds: 4
+request: 1
+
+2024-12-04 15:26:59,352 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': '9172c901-766a-4534-9c0c-6551295db836', 'response': 2}
+2024-12-04 15:32:24,525 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "d882c214-2d65-414c-a83f-dec558d7095c"
+proccess_time_in_seconds: 4
+request: 2
+
+2024-12-04 15:32:28,533 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': 'd882c214-2d65-414c-a83f-dec558d7095c', 'response': 4}
+2024-12-04 15:35:31,074 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "b57a2661-1d69-4c5c-83e6-c44a2a45cc9b"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 15:35:35,082 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': 'b57a2661-1d69-4c5c-83e6-c44a2a45cc9b', 'response': 6}
+2024-12-04 15:35:38,061 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "79167b52-8811-4fff-986e-89fc2db1c156"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 15:35:42,068 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': '79167b52-8811-4fff-986e-89fc2db1c156', 'response': 6}
+2024-12-04 15:37:20,173 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "407582ea-679f-4dd5-9739-e78e40cc44f6"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 15:37:24,182 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': '407582ea-679f-4dd5-9739-e78e40cc44f6', 'response': 6}
+2024-12-04 15:38:28,785 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "e376168a-2695-454b-a46d-59ae85ed164b"
+proccess_time_in_seconds: 4
+request: 4
+
+2024-12-04 15:38:32,792 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': 'e376168a-2695-454b-a46d-59ae85ed164b', 'response': 8}
+2024-12-04 15:43:03,468 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "0b0f83dc-1705-4c03-b44c-cd73ff786a63"
+proccess_time_in_seconds: 4
+request: 5
+
+2024-12-04 15:43:07,476 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': '0b0f83dc-1705-4c03-b44c-cd73ff786a63', 'response': 10}
+2024-12-04 15:48:28,024 [INFO] Получен запрос return_address: "53de5413-75bb-4105-940a-91fc6b581e7f"
+request_id: "39808e79-f1f4-48d6-b062-f4cc699b2b28"
+proccess_time_in_seconds: 4
+request: 6
+
+2024-12-04 15:48:32,032 [INFO] Ответ отправлен в 53de5413-75bb-4105-940a-91fc6b581e7f: {'request_id': '39808e79-f1f4-48d6-b062-f4cc699b2b28', 'response': 12}
+2024-12-04 15:49:22,644 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "b6ecb437-adac-4ff1-b6ad-4bb20b3ca182"
+request: 23
+
+2024-12-04 15:49:22,651 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': 'b6ecb437-adac-4ff1-b6ad-4bb20b3ca182', 'response': 46}
+2024-12-04 15:49:52,666 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "88d7dfa8-7bc9-4491-aa9e-a91a33278c61"
+proccess_time_in_seconds: 4
+request: 24
+
+2024-12-04 15:49:56,673 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': '88d7dfa8-7bc9-4491-aa9e-a91a33278c61', 'response': 48}
+2024-12-04 16:00:30,544 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "00dc682b-ddd5-4db8-9a73-4fd75d9c5d78"
+proccess_time_in_seconds: 4
+request: 25
+
+2024-12-04 16:00:34,554 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': '00dc682b-ddd5-4db8-9a73-4fd75d9c5d78', 'response': 50}
+2024-12-04 16:08:46,559 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "7d530de5-f534-4dfd-a2ea-69157e0d7600"
+proccess_time_in_seconds: 4
+request: 26
+
+2024-12-04 16:08:50,567 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': '7d530de5-f534-4dfd-a2ea-69157e0d7600', 'response': 52}
+2024-12-04 16:29:37,540 [INFO] Получен запрос return_address: "9eb44bec-7867-4540-b9f7-931c6711528b"
+request_id: "808fd723-2858-4aa8-8f1f-ec0a43787d16"
+proccess_time_in_seconds: 4
+request: 5
+
+2024-12-04 16:29:38,808 [INFO] Получен запрос return_address: "15dd31b6-407c-4b4d-b8c3-b20d65ecf78f"
+request_id: "243eacd0-7de7-4b01-a8e0-89580265cd33"
+proccess_time_in_seconds: 3
+request: 2
+
+2024-12-04 16:29:40,088 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "b04a9b6f-f962-4660-8ce4-57cd7fa34527"
+proccess_time_in_seconds: 3
+request: 3
+
+2024-12-04 16:29:41,549 [INFO] Ответ отправлен в 9eb44bec-7867-4540-b9f7-931c6711528b: {'request_id': '808fd723-2858-4aa8-8f1f-ec0a43787d16', 'response': 10}
+2024-12-04 16:29:41,815 [INFO] Ответ отправлен в 15dd31b6-407c-4b4d-b8c3-b20d65ecf78f: {'request_id': '243eacd0-7de7-4b01-a8e0-89580265cd33', 'response': 4}
+2024-12-04 16:29:43,094 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': 'b04a9b6f-f962-4660-8ce4-57cd7fa34527', 'response': 6}
+2024-12-04 16:30:03,230 [INFO] Получен запрос return_address: "15dd31b6-407c-4b4d-b8c3-b20d65ecf78f"
+request_id: "f165d0fd-9e24-43bf-a92f-9389ed815543"
+proccess_time_in_seconds: 6
+request: 2
+
+2024-12-04 16:30:04,069 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "78970444-6321-472d-8611-4cedd296cd12"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 16:30:04,873 [INFO] Получен запрос return_address: "9eb44bec-7867-4540-b9f7-931c6711528b"
+request_id: "837884ee-ddd4-4bfe-9663-331e691277a3"
+proccess_time_in_seconds: 2
+request: 5
+
+2024-12-04 16:30:06,880 [INFO] Ответ отправлен в 9eb44bec-7867-4540-b9f7-931c6711528b: {'request_id': '837884ee-ddd4-4bfe-9663-331e691277a3', 'response': 10}
+2024-12-04 16:30:08,077 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': '78970444-6321-472d-8611-4cedd296cd12', 'response': 6}
+2024-12-04 16:30:09,238 [INFO] Ответ отправлен в 15dd31b6-407c-4b4d-b8c3-b20d65ecf78f: {'request_id': 'f165d0fd-9e24-43bf-a92f-9389ed815543', 'response': 4}
+2024-12-04 16:31:32,642 [INFO] Получен запрос return_address: "9eb44bec-7867-4540-b9f7-931c6711528b"
+request_id: "d6ee10f4-3fc4-479b-a637-ac9762bb3f0e"
+proccess_time_in_seconds: 2
+request: 5
+
+2024-12-04 16:31:33,271 [INFO] Получен запрос return_address: "15a70d95-65cb-4376-9bb6-aa6ae4b90426"
+request_id: "6953553b-4bd2-4405-8d8e-dfd99d526fb0"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 16:31:33,940 [INFO] Получен запрос return_address: "15dd31b6-407c-4b4d-b8c3-b20d65ecf78f"
+request_id: "f905f7ee-7e3a-4440-a635-0a236656f572"
+proccess_time_in_seconds: 6
+request: 2
+
+2024-12-04 16:31:34,649 [INFO] Ответ отправлен в 9eb44bec-7867-4540-b9f7-931c6711528b: {'request_id': 'd6ee10f4-3fc4-479b-a637-ac9762bb3f0e', 'response': 10}
+2024-12-04 16:31:37,278 [INFO] Ответ отправлен в 15a70d95-65cb-4376-9bb6-aa6ae4b90426: {'request_id': '6953553b-4bd2-4405-8d8e-dfd99d526fb0', 'response': 6}
+2024-12-04 16:31:39,948 [INFO] Ответ отправлен в 15dd31b6-407c-4b4d-b8c3-b20d65ecf78f: {'request_id': 'f905f7ee-7e3a-4440-a635-0a236656f572', 'response': 4}
+2024-12-04 16:33:20,070 [INFO] Получен запрос return_address: "15dd31b6-407c-4b4d-b8c3-b20d65ecf78f"
+request_id: "73332e07-ad0f-49d2-b8e1-524e290f02d8"
+proccess_time_in_seconds: 6
+request: 2
+
+2024-12-04 16:33:26,077 [INFO] Ответ отправлен в 15dd31b6-407c-4b4d-b8c3-b20d65ecf78f: {'request_id': '73332e07-ad0f-49d2-b8e1-524e290f02d8', 'response': 4}
+2024-12-04 16:39:17,172 [INFO] Получен запрос return_address: "edd3f46d-f426-4c98-a3a6-4c05229b2a43"
+request_id: "cfa12877-7c63-4456-bb66-77939cc722d2"
+request: 2
+
+2024-12-04 16:39:17,180 [INFO] Ответ отправлен в edd3f46d-f426-4c98-a3a6-4c05229b2a43: {'request_id': 'cfa12877-7c63-4456-bb66-77939cc722d2', 'response': 4}
+2024-12-04 16:39:43,126 [INFO] Получен запрос return_address: "ee9ca630-6097-4d81-9cfc-35055fccee6b"
+request_id: "4fc3224a-decd-4875-8745-a357a6ebc7bb"
+request: 20
+
+2024-12-04 16:39:43,134 [INFO] Ответ отправлен в ee9ca630-6097-4d81-9cfc-35055fccee6b: {'request_id': '4fc3224a-decd-4875-8745-a357a6ebc7bb', 'response': 40}
+2024-12-04 16:39:58,598 [INFO] Получен запрос return_address: "ee9ca630-6097-4d81-9cfc-35055fccee6b"
+request_id: "625156ad-20c5-4a51-b928-6cf9632ae6ad"
+request: 20
+
+2024-12-04 16:39:58,605 [INFO] Ответ отправлен в ee9ca630-6097-4d81-9cfc-35055fccee6b: {'request_id': '625156ad-20c5-4a51-b928-6cf9632ae6ad', 'response': 40}
+2024-12-04 16:40:04,001 [INFO] Получен запрос return_address: "ee9ca630-6097-4d81-9cfc-35055fccee6b"
+request_id: "51a1e3ec-8442-40da-8723-51950ebc9948"
+proccess_time_in_seconds: 5
+request: 20
+
+2024-12-04 16:40:09,009 [INFO] Ответ отправлен в ee9ca630-6097-4d81-9cfc-35055fccee6b: {'request_id': '51a1e3ec-8442-40da-8723-51950ebc9948', 'response': 40}
+2024-12-04 17:23:16,042 [INFO] Получен запрос return_address: "f25050ba-418d-4b07-996e-aeda5f84e3b5"
+request_id: "abc79b16-75b3-480c-8176-e3d77c71dc70"
+proccess_time_in_seconds: 3
+request: 2
+
+2024-12-04 17:23:19,051 [INFO] Ответ отправлен в f25050ba-418d-4b07-996e-aeda5f84e3b5: {'request_id': 'abc79b16-75b3-480c-8176-e3d77c71dc70', 'response': 4}
+2024-12-04 17:25:20,620 [INFO] Получен запрос return_address: "2d852b05-67dc-4d90-9606-e73571001fb5"
+request_id: "36bd6235-79ab-4920-8d82-ca0e821b9efd"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-04 17:25:30,629 [INFO] Ответ отправлен в 2d852b05-67dc-4d90-9606-e73571001fb5: {'request_id': '36bd6235-79ab-4920-8d82-ca0e821b9efd', 'response': 4}
+2024-12-04 17:25:51,543 [INFO] Получен запрос return_address: "2d852b05-67dc-4d90-9606-e73571001fb5"
+request_id: "4d0fac94-14bd-4998-aa9a-bd2f450eb5cc"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-04 17:26:01,550 [INFO] Ответ отправлен в 2d852b05-67dc-4d90-9606-e73571001fb5: {'request_id': '4d0fac94-14bd-4998-aa9a-bd2f450eb5cc', 'response': 4}
+2024-12-04 17:26:01,578 [INFO] Получен запрос return_address: "2d852b05-67dc-4d90-9606-e73571001fb5"
+request_id: "0db49b4c-6a60-43da-9550-2beac418eb25"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-04 17:26:11,591 [INFO] Ответ отправлен в 2d852b05-67dc-4d90-9606-e73571001fb5: {'request_id': '0db49b4c-6a60-43da-9550-2beac418eb25', 'response': 4}
+2024-12-04 17:45:18,626 [INFO] Получен запрос return_address: "333b241a-8c22-4861-a0f0-ea0d2b3ee75c"
+request_id: "33da6cc1-2f12-4cf4-acbd-3f3fd57cac6d"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 17:45:22,633 [INFO] Ответ отправлен в 333b241a-8c22-4861-a0f0-ea0d2b3ee75c: {'request_id': '33da6cc1-2f12-4cf4-acbd-3f3fd57cac6d', 'response': 6}
+2024-12-04 17:45:59,937 [INFO] Получен запрос return_address: "6a62a5a5-bd2e-400e-ba34-d946102559e6"
+request_id: "b4fe6223-d590-4c88-941d-9a59168b72ba"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-04 17:46:03,943 [INFO] Ответ отправлен в 6a62a5a5-bd2e-400e-ba34-d946102559e6: {'request_id': 'b4fe6223-d590-4c88-941d-9a59168b72ba', 'response': 6}
+2024-12-05 14:26:26,324 [INFO] Получен запрос return_address: "6a62a5a5-bd2e-400e-ba34-d946102559e6"
+request_id: "8309073b-f93d-49e9-acfd-ed37ddbe8480"
+proccess_time_in_seconds: 4
+request: 3
+
+2024-12-05 14:26:30,334 [INFO] Ответ отправлен в 6a62a5a5-bd2e-400e-ba34-d946102559e6: {'request_id': '8309073b-f93d-49e9-acfd-ed37ddbe8480', 'response': 6}
+2024-12-05 14:28:08,311 [INFO] Сервер готов принимать запросы
+2024-12-05 14:28:27,924 [INFO] Сервер готов принимать запросы
+2024-12-05 14:29:46,707 [INFO] Получен запрос return_address: "2171a8e2-3813-4406-927e-5954928c495f"
+request_id: "c09307a0-0161-4ba2-ba0c-89d0a838dc30"
+proccess_time_in_seconds: 0
+request: 12
+
+2024-12-05 14:29:46,713 [INFO] Ответ отправлен в 2171a8e2-3813-4406-927e-5954928c495f: {'request_id': 'c09307a0-0161-4ba2-ba0c-89d0a838dc30', 'response': 24}
+2024-12-05 14:29:51,429 [INFO] Получен запрос return_address: "2171a8e2-3813-4406-927e-5954928c495f"
+request_id: "dd4f2af8-000c-408a-9bbc-ef901c729107"
+proccess_time_in_seconds: 0
+request: 13
+
+2024-12-05 14:29:51,434 [INFO] Ответ отправлен в 2171a8e2-3813-4406-927e-5954928c495f: {'request_id': 'dd4f2af8-000c-408a-9bbc-ef901c729107', 'response': 26}
+2024-12-05 14:29:54,409 [INFO] Получен запрос return_address: "2171a8e2-3813-4406-927e-5954928c495f"
+request_id: "be96c61b-64c0-44c1-8496-61bc8d70240c"
+proccess_time_in_seconds: 1
+request: 13
+
+2024-12-05 14:29:55,415 [INFO] Ответ отправлен в 2171a8e2-3813-4406-927e-5954928c495f: {'request_id': 'be96c61b-64c0-44c1-8496-61bc8d70240c', 'response': 26}
+2024-12-05 15:19:00,929 [INFO] Получен запрос return_address: "a91c7eea-3cb4-4f8f-b6fb-c408dfb8a8f1"
+request_id: "3eff84f6-57b7-43fc-a2d2-7310a139575b"
+proccess_time_in_seconds: 0
+request: 12
+
+2024-12-05 15:19:00,935 [INFO] Ответ отправлен в a91c7eea-3cb4-4f8f-b6fb-c408dfb8a8f1: {'request_id': '3eff84f6-57b7-43fc-a2d2-7310a139575b', 'response': 24}
+2024-12-05 15:19:05,580 [INFO] Получен запрос return_address: "a91c7eea-3cb4-4f8f-b6fb-c408dfb8a8f1"
+request_id: "cea88dc4-131b-4578-b70c-a978ea7d4175"
+proccess_time_in_seconds: 4
+request: 12
+
+2024-12-05 15:19:09,591 [INFO] Ответ отправлен в a91c7eea-3cb4-4f8f-b6fb-c408dfb8a8f1: {'request_id': 'cea88dc4-131b-4578-b70c-a978ea7d4175', 'response': 24}
+2024-12-05 15:19:29,527 [INFO] Получен запрос return_address: "a91c7eea-3cb4-4f8f-b6fb-c408dfb8a8f1"
+request_id: "394d32ab-19b6-4f0a-90d8-6df11c269135"
+proccess_time_in_seconds: 4
+request: 12
+
+2024-12-05 15:19:33,536 [INFO] Ответ отправлен в a91c7eea-3cb4-4f8f-b6fb-c408dfb8a8f1: {'request_id': '394d32ab-19b6-4f0a-90d8-6df11c269135', 'response': 24}
+2024-12-05 15:23:05,979 [INFO] Сервер готов принимать запросы
+2024-12-05 15:24:47,047 [INFO] Получен запрос return_address: "c42107d8-76ce-4996-8597-0b1257cb1d67"
+request_id: "3232cdb1-a015-471b-9e42-67c9974b5a9a"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-05 15:24:47,052 [INFO] Ответ отправлен в c42107d8-76ce-4996-8597-0b1257cb1d67: {'request_id': '3232cdb1-a015-471b-9e42-67c9974b5a9a', 'response': 4}
+2024-12-05 15:24:52,313 [INFO] Получен запрос return_address: "c42107d8-76ce-4996-8597-0b1257cb1d67"
+request_id: "d91f69a2-8736-4669-961a-cefee078bd7a"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-05 15:24:52,320 [INFO] Ответ отправлен в c42107d8-76ce-4996-8597-0b1257cb1d67: {'request_id': 'd91f69a2-8736-4669-961a-cefee078bd7a', 'response': 4}
+2024-12-05 15:25:50,052 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "05e46c2b-38d7-4a48-ae14-96f3e3a17fa4"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-05 15:25:50,058 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': '05e46c2b-38d7-4a48-ae14-96f3e3a17fa4', 'response': 4}
+2024-12-05 15:25:51,909 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "97c1eb03-356f-4463-a455-7f6c3359b004"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-05 15:25:51,914 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': '97c1eb03-356f-4463-a455-7f6c3359b004', 'response': 4}
+2024-12-05 15:26:00,277 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "736d859a-bfe4-4055-a2e7-db4da61c5df7"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-05 15:26:01,285 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': '736d859a-bfe4-4055-a2e7-db4da61c5df7', 'response': 4}
+2024-12-05 15:26:07,082 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "3af9ebaf-1740-4c62-bae3-8b428893c5ee"
+proccess_time_in_seconds: 3
+request: 3
+
+2024-12-05 15:26:10,092 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': '3af9ebaf-1740-4c62-bae3-8b428893c5ee', 'response': 6}
+2024-12-05 16:15:52,785 [INFO] Получен запрос return_address: "6b853ba9-4988-4400-b2f6-477bd2b5cc53"
+request_id: "eb12be2b-8235-42a3-8775-eb55d2502bc1"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-05 16:15:54,049 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "89278ebc-8be8-4ec0-b080-6b40ec8bbfd9"
+proccess_time_in_seconds: 3
+request: 5
+
+2024-12-05 16:15:55,376 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "5a9bf9cf-6701-4325-aa6b-a57244203c7a"
+proccess_time_in_seconds: 7
+request: 3
+
+2024-12-05 16:15:57,056 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': '89278ebc-8be8-4ec0-b080-6b40ec8bbfd9', 'response': 10}
+2024-12-05 16:16:02,385 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': '5a9bf9cf-6701-4325-aa6b-a57244203c7a', 'response': 6}
+2024-12-05 16:16:02,791 [INFO] Ответ отправлен в 6b853ba9-4988-4400-b2f6-477bd2b5cc53: {'request_id': 'eb12be2b-8235-42a3-8775-eb55d2502bc1', 'response': 4}
+2024-12-05 16:16:11,296 [INFO] Получен запрос return_address: "6b853ba9-4988-4400-b2f6-477bd2b5cc53"
+request_id: "bc96e769-28f5-4cb7-b4a6-5880656b5a69"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-05 16:16:12,080 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "b73efdcc-1d65-4127-94e6-b5aab7e8f5d0"
+proccess_time_in_seconds: 7
+request: 3
+
+2024-12-05 16:16:12,883 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "a99f6a1a-e501-4f77-b07b-b894a89fe4cc"
+proccess_time_in_seconds: 3
+request: 5
+
+2024-12-05 16:16:15,891 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': 'a99f6a1a-e501-4f77-b07b-b894a89fe4cc', 'response': 10}
+2024-12-05 16:16:19,088 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': 'b73efdcc-1d65-4127-94e6-b5aab7e8f5d0', 'response': 6}
+2024-12-05 16:16:21,306 [INFO] Ответ отправлен в 6b853ba9-4988-4400-b2f6-477bd2b5cc53: {'request_id': 'bc96e769-28f5-4cb7-b4a6-5880656b5a69', 'response': 4}
+2024-12-05 16:16:25,052 [INFO] Получен запрос return_address: "6b853ba9-4988-4400-b2f6-477bd2b5cc53"
+request_id: "a4464dcd-b9e8-4257-984f-89ab72378c19"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-05 16:16:25,752 [INFO] Получен запрос return_address: "ff4d31cf-82c2-4092-90dd-f8ef011bac9d"
+request_id: "ee098f54-bc28-43a2-8ff7-cef739625755"
+proccess_time_in_seconds: 7
+request: 3
+
+2024-12-05 16:16:26,362 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "8c6a8cd0-ba2e-40aa-b09e-12f7f9c62714"
+proccess_time_in_seconds: 3
+request: 5
+
+2024-12-05 16:16:29,370 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': '8c6a8cd0-ba2e-40aa-b09e-12f7f9c62714', 'response': 10}
+2024-12-05 16:16:32,760 [INFO] Ответ отправлен в ff4d31cf-82c2-4092-90dd-f8ef011bac9d: {'request_id': 'ee098f54-bc28-43a2-8ff7-cef739625755', 'response': 6}
+2024-12-05 16:16:35,062 [INFO] Ответ отправлен в 6b853ba9-4988-4400-b2f6-477bd2b5cc53: {'request_id': 'a4464dcd-b9e8-4257-984f-89ab72378c19', 'response': 4}
+2024-12-05 16:24:30,233 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "54d65b32-c05d-4884-b567-65c01d606c03"
+proccess_time_in_seconds: 10
+request: 6
+
+2024-12-05 16:24:39,973 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "893c52c8-768f-4f25-951c-69027ca50c79"
+proccess_time_in_seconds: 0
+request: 6
+
+2024-12-05 16:24:39,979 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': '893c52c8-768f-4f25-951c-69027ca50c79', 'response': 12}
+2024-12-05 16:24:40,241 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': '54d65b32-c05d-4884-b567-65c01d606c03', 'response': 12}
+2024-12-05 16:33:20,078 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "2e1cb6e4-9606-472d-a0ae-1732b7bd874a"
+proccess_time_in_seconds: 10
+request: 6
+
+2024-12-05 16:33:29,131 [INFO] Получен запрос return_address: "5f736925-aade-43f3-90c1-d1dcee05b6ed"
+request_id: "7479b097-1c11-498d-af61-f18719b382c0"
+proccess_time_in_seconds: 2
+request: 7
+
+2024-12-05 16:33:30,085 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': '2e1cb6e4-9606-472d-a0ae-1732b7bd874a', 'response': 12}
+2024-12-05 16:33:31,140 [INFO] Ответ отправлен в 5f736925-aade-43f3-90c1-d1dcee05b6ed: {'request_id': '7479b097-1c11-498d-af61-f18719b382c0', 'response': 14}
+2024-12-05 16:46:00,813 [INFO] Получен запрос return_address: "180a647a-688c-4406-8bd4-4a6ee0b3156d"
+request_id: "42d28d6d-9d5b-4352-baa7-c22f7d595ec1"
+proccess_time_in_seconds: 10
+request: 3
+
+2024-12-05 16:46:10,820 [INFO] Ответ отправлен в 180a647a-688c-4406-8bd4-4a6ee0b3156d: {'request_id': '42d28d6d-9d5b-4352-baa7-c22f7d595ec1', 'response': 6}
+2024-12-05 16:47:16,274 [INFO] Получен запрос return_address: "responses_queue"
+request_id: "129afb2d-72b1-47bb-97e9-9496aa8beb4c"
+proccess_time_in_seconds: 7
+request: 10
+
+2024-12-05 16:47:23,284 [INFO] Ответ отправлен в responses_queue: {'request_id': '129afb2d-72b1-47bb-97e9-9496aa8beb4c', 'response': 20}
+2024-12-05 16:47:30,773 [INFO] Получен запрос return_address: "f5207924-2186-4b6a-bc87-9c8a41815a37"
+request_id: "3da1a76f-10fb-4643-93d2-5f87e4c8c8bd"
+proccess_time_in_seconds: 10
+request: 3
+
+2024-12-05 16:47:40,780 [INFO] Ответ отправлен в f5207924-2186-4b6a-bc87-9c8a41815a37: {'request_id': '3da1a76f-10fb-4643-93d2-5f87e4c8c8bd', 'response': 6}
+2024-12-05 16:49:48,363 [INFO] Получен запрос return_address: "d3ea92dc-e475-4eb4-aa26-b8919115c003"
+request_id: "0be95e5a-e5d8-45a6-9244-80203bc2f357"
+proccess_time_in_seconds: 10
+request: 4
+
+2024-12-05 16:49:58,424 [INFO] Ответ отправлен в d3ea92dc-e475-4eb4-aa26-b8919115c003: {'request_id': '0be95e5a-e5d8-45a6-9244-80203bc2f357', 'response': 8}
+2024-12-05 16:55:57,241 [INFO] Сервер готов принимать запросы
+2024-12-05 16:56:04,350 [INFO] Получен запрос return_address: "708e403a-dc24-4445-9e26-e524f8139a93"
+request_id: "c37a507a-c808-4ac7-a2ee-073be4dbf4dc"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-05 16:56:04,356 [INFO] Ответ отправлен в 708e403a-dc24-4445-9e26-e524f8139a93: {'request_id': 'c37a507a-c808-4ac7-a2ee-073be4dbf4dc', 'response': 4}
+2024-12-05 16:56:12,854 [INFO] Получен запрос return_address: "708e403a-dc24-4445-9e26-e524f8139a93"
+request_id: "5b84fd66-8493-4bf9-9349-715a26a55828"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-05 16:56:21,821 [INFO] Получен запрос return_address: "708e403a-dc24-4445-9e26-e524f8139a93"
+request_id: "4ed45361-0163-410f-90e3-105fb6120fc0"
+proccess_time_in_seconds: 3
+request: 6
+
+2024-12-05 16:56:22,862 [INFO] Ответ отправлен в 708e403a-dc24-4445-9e26-e524f8139a93: {'request_id': '5b84fd66-8493-4bf9-9349-715a26a55828', 'response': 4}
+2024-12-05 16:56:24,829 [INFO] Ответ отправлен в 708e403a-dc24-4445-9e26-e524f8139a93: {'request_id': '4ed45361-0163-410f-90e3-105fb6120fc0', 'response': 12}
+2024-12-05 16:57:09,529 [INFO] Получен запрос return_address: "708e403a-dc24-4445-9e26-e524f8139a93"
+request_id: "5eee1332-35fa-433e-807a-049fc31dd907"
+proccess_time_in_seconds: 10
+request: 2
+
+2024-12-05 16:57:19,537 [INFO] Ответ отправлен в 708e403a-dc24-4445-9e26-e524f8139a93: {'request_id': '5eee1332-35fa-433e-807a-049fc31dd907', 'response': 4}
+2024-12-05 16:58:19,289 [INFO] Получен запрос return_address: "708e403a-dc24-4445-9e26-e524f8139a93"
+request_id: "96029ed0-0709-42d6-9bbd-8a89846c1e9f"
+proccess_time_in_seconds: 10
+request: 0
+
+2024-12-05 16:58:21,328 [INFO] Получен запрос return_address: "708e403a-dc24-4445-9e26-e524f8139a93"
+request_id: "7f9c1378-798f-4f55-a9a7-b745cefe9bb7"
+proccess_time_in_seconds: 10
+request: 0
+
+2024-12-05 16:58:29,299 [INFO] Ответ отправлен в 708e403a-dc24-4445-9e26-e524f8139a93: {'request_id': '96029ed0-0709-42d6-9bbd-8a89846c1e9f', 'response': 0}
+2024-12-05 16:58:31,339 [INFO] Ответ отправлен в 708e403a-dc24-4445-9e26-e524f8139a93: {'request_id': '7f9c1378-798f-4f55-a9a7-b745cefe9bb7', 'response': 0}
+2024-12-11 12:12:11,730 [INFO] Получен запрос return_address: "2c61a63b-37db-4a0a-b627-94e340cb827c"
+request_id: "e24fd0d4-5586-484b-8285-1b41e44282af"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 12:12:11,739 [INFO] Ответ отправлен в 2c61a63b-37db-4a0a-b627-94e340cb827c: {'request_id': 'e24fd0d4-5586-484b-8285-1b41e44282af', 'response': 6}
+2024-12-11 12:12:14,735 [INFO] Получен запрос return_address: "2c61a63b-37db-4a0a-b627-94e340cb827c"
+request_id: "88d225bf-c17e-4d96-b381-8197bfecc586"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 12:12:15,742 [INFO] Ответ отправлен в 2c61a63b-37db-4a0a-b627-94e340cb827c: {'request_id': '88d225bf-c17e-4d96-b381-8197bfecc586', 'response': 6}
+2024-12-11 12:12:26,643 [INFO] Получен запрос return_address: "2c61a63b-37db-4a0a-b627-94e340cb827c"
+request_id: "2c0141d7-e5d7-4056-9472-03e347068160"
+proccess_time_in_seconds: 10
+request: 3
+
+2024-12-11 12:12:36,650 [INFO] Ответ отправлен в 2c61a63b-37db-4a0a-b627-94e340cb827c: {'request_id': '2c0141d7-e5d7-4056-9472-03e347068160', 'response': 6}
+2024-12-11 13:15:58,023 [INFO] Получен запрос return_address: "b96d1a18-6c3d-4746-a7b4-2f320c1ba2a8"
+request_id: "14552c13-f233-4092-897c-a3543f998ca0"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 13:15:58,029 [INFO] Ответ отправлен в b96d1a18-6c3d-4746-a7b4-2f320c1ba2a8: {'request_id': '14552c13-f233-4092-897c-a3543f998ca0', 'response': 4}
+2024-12-11 13:16:01,586 [INFO] Получен запрос return_address: "b96d1a18-6c3d-4746-a7b4-2f320c1ba2a8"
+request_id: "6b793bc6-6a0a-4f30-8472-732ef007863b"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 13:16:01,592 [INFO] Ответ отправлен в b96d1a18-6c3d-4746-a7b4-2f320c1ba2a8: {'request_id': '6b793bc6-6a0a-4f30-8472-732ef007863b', 'response': 4}
+2024-12-11 13:17:33,768 [INFO] Получен запрос return_address: "fef68790-12a0-4d5a-8024-f88df91f0d78"
+request_id: "532ec91b-224b-42d5-998c-805309566cec"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:17:33,775 [INFO] Ответ отправлен в fef68790-12a0-4d5a-8024-f88df91f0d78: {'request_id': '532ec91b-224b-42d5-998c-805309566cec', 'response': 6}
+2024-12-11 13:17:35,440 [INFO] Получен запрос return_address: "fef68790-12a0-4d5a-8024-f88df91f0d78"
+request_id: "c7cd6d43-5632-4100-a375-e62422d024cd"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:17:35,446 [INFO] Ответ отправлен в fef68790-12a0-4d5a-8024-f88df91f0d78: {'request_id': 'c7cd6d43-5632-4100-a375-e62422d024cd', 'response': 6}
+2024-12-11 13:18:10,634 [INFO] Получен запрос return_address: "9d149605-d2a6-470e-bf26-93e6c88204b0"
+request_id: "6db90408-3452-43d1-bef4-a8410d40a47c"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:18:10,642 [INFO] Ответ отправлен в 9d149605-d2a6-470e-bf26-93e6c88204b0: {'request_id': '6db90408-3452-43d1-bef4-a8410d40a47c', 'response': 6}
+2024-12-11 13:18:12,345 [INFO] Получен запрос return_address: "9d149605-d2a6-470e-bf26-93e6c88204b0"
+request_id: "26424600-2609-4069-8e29-28c918f5248f"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:18:12,353 [INFO] Ответ отправлен в 9d149605-d2a6-470e-bf26-93e6c88204b0: {'request_id': '26424600-2609-4069-8e29-28c918f5248f', 'response': 6}
+2024-12-11 13:18:18,150 [INFO] Получен запрос return_address: "9d149605-d2a6-470e-bf26-93e6c88204b0"
+request_id: "ed5ba054-d6bc-4fe6-b3fb-85b94d2b94a7"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 13:18:19,159 [INFO] Ответ отправлен в 9d149605-d2a6-470e-bf26-93e6c88204b0: {'request_id': 'ed5ba054-d6bc-4fe6-b3fb-85b94d2b94a7', 'response': 6}
+2024-12-11 13:18:35,875 [INFO] Получен запрос return_address: "9d149605-d2a6-470e-bf26-93e6c88204b0"
+request_id: "f4166a5e-ec65-4be0-b328-a422ff2346b8"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 13:18:36,881 [INFO] Ответ отправлен в 9d149605-d2a6-470e-bf26-93e6c88204b0: {'request_id': 'f4166a5e-ec65-4be0-b328-a422ff2346b8', 'response': 6}
+2024-12-11 13:18:55,089 [INFO] Получен запрос return_address: "136d6845-f5d7-47b4-9647-dede8748a12a"
+request_id: "8240b9a6-7fb9-4087-a824-d0af41c66fa5"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:18:55,095 [INFO] Ответ отправлен в 136d6845-f5d7-47b4-9647-dede8748a12a: {'request_id': '8240b9a6-7fb9-4087-a824-d0af41c66fa5', 'response': 6}
+2024-12-11 13:18:56,705 [INFO] Получен запрос return_address: "136d6845-f5d7-47b4-9647-dede8748a12a"
+request_id: "313ba282-c174-4f8a-b207-1b7cc245c119"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:18:56,711 [INFO] Ответ отправлен в 136d6845-f5d7-47b4-9647-dede8748a12a: {'request_id': '313ba282-c174-4f8a-b207-1b7cc245c119', 'response': 6}
+2024-12-11 13:18:59,058 [INFO] Получен запрос return_address: "136d6845-f5d7-47b4-9647-dede8748a12a"
+request_id: "f0d9e363-4204-4cc0-a42d-6c0cb856f4ae"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 13:19:00,065 [INFO] Ответ отправлен в 136d6845-f5d7-47b4-9647-dede8748a12a: {'request_id': 'f0d9e363-4204-4cc0-a42d-6c0cb856f4ae', 'response': 6}
+2024-12-11 13:19:31,562 [INFO] Получен запрос return_address: "136d6845-f5d7-47b4-9647-dede8748a12a"
+request_id: "b3154f92-b0f0-4e87-ac5d-843738f59b1c"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 13:19:32,568 [INFO] Ответ отправлен в 136d6845-f5d7-47b4-9647-dede8748a12a: {'request_id': 'b3154f92-b0f0-4e87-ac5d-843738f59b1c', 'response': 6}
+2024-12-11 13:19:33,594 [INFO] Получен запрос return_address: "136d6845-f5d7-47b4-9647-dede8748a12a"
+request_id: "747caa27-c399-4ef9-ac82-ff796f28bb98"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 13:19:34,601 [INFO] Ответ отправлен в 136d6845-f5d7-47b4-9647-dede8748a12a: {'request_id': '747caa27-c399-4ef9-ac82-ff796f28bb98', 'response': 6}
+2024-12-11 13:19:47,035 [INFO] Получен запрос return_address: "136d6845-f5d7-47b4-9647-dede8748a12a"
+request_id: "6ef999b5-02a2-43b0-9a94-37646d4de672"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 13:19:48,041 [INFO] Ответ отправлен в 136d6845-f5d7-47b4-9647-dede8748a12a: {'request_id': '6ef999b5-02a2-43b0-9a94-37646d4de672', 'response': 6}
+2024-12-11 13:23:07,552 [INFO] Получен запрос return_address: "bbe25b4a-c99f-45d4-8da4-e06e29aead86"
+request_id: "001dabe9-8fbe-4009-b10f-7798483b5088"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:23:07,559 [INFO] Ответ отправлен в bbe25b4a-c99f-45d4-8da4-e06e29aead86: {'request_id': '001dabe9-8fbe-4009-b10f-7798483b5088', 'response': 6}
+2024-12-11 13:23:10,781 [INFO] Получен запрос return_address: "bbe25b4a-c99f-45d4-8da4-e06e29aead86"
+request_id: "bac68657-8feb-4bbe-b184-8c5791c6b3a3"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:23:10,788 [INFO] Ответ отправлен в bbe25b4a-c99f-45d4-8da4-e06e29aead86: {'request_id': 'bac68657-8feb-4bbe-b184-8c5791c6b3a3', 'response': 6}
+2024-12-11 13:23:18,924 [INFO] Получен запрос return_address: "bbe25b4a-c99f-45d4-8da4-e06e29aead86"
+request_id: "8e664e37-4d88-4111-a8e6-bb46fe91e4b6"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 13:23:18,931 [INFO] Ответ отправлен в bbe25b4a-c99f-45d4-8da4-e06e29aead86: {'request_id': '8e664e37-4d88-4111-a8e6-bb46fe91e4b6', 'response': 6}
+2024-12-11 13:23:53,589 [INFO] Сервер готов принимать запросы
+2024-12-11 13:24:01,337 [INFO] Получен запрос return_address: "0c6f7d9d-9148-4e50-84a8-8f857b153902"
+request_id: "f0aba19b-bdbd-479b-9e6b-fdfc2ed8c2dd"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-11 13:24:01,343 [INFO] Ответ отправлен в 0c6f7d9d-9148-4e50-84a8-8f857b153902: {'request_id': 'f0aba19b-bdbd-479b-9e6b-fdfc2ed8c2dd', 'response': 0}
+2024-12-11 13:36:28,209 [INFO] Получен запрос return_address: "f7068526-d27b-4f4c-a1fb-9e2160d6709e"
+request_id: "dbab89eb-1fe1-496e-b13d-c3cd0f2f1742"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 13:36:28,215 [INFO] Ответ отправлен в f7068526-d27b-4f4c-a1fb-9e2160d6709e: {'request_id': 'dbab89eb-1fe1-496e-b13d-c3cd0f2f1742', 'response': 4}
+2024-12-11 13:36:36,197 [INFO] Получен запрос return_address: "f7068526-d27b-4f4c-a1fb-9e2160d6709e"
+request_id: "fa9ce226-d6b4-4175-8fdd-125d98addd7b"
+proccess_time_in_seconds: 0
+request: 4
+
+2024-12-11 13:36:36,206 [INFO] Ответ отправлен в f7068526-d27b-4f4c-a1fb-9e2160d6709e: {'request_id': 'fa9ce226-d6b4-4175-8fdd-125d98addd7b', 'response': 8}
+2024-12-11 13:42:32,330 [INFO] Сервер готов принимать запросы
+2024-12-11 13:42:40,983 [INFO] Получен запрос return_address: "3200c236-7636-491a-af55-80ddb0f7c1d1"
+request_id: "9937f7d4-ec8f-4db8-9589-8ea25f083184"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-11 13:42:40,991 [INFO] Ответ отправлен в 3200c236-7636-491a-af55-80ddb0f7c1d1: {'request_id': '9937f7d4-ec8f-4db8-9589-8ea25f083184', 'response': 2}
+2024-12-11 13:44:51,451 [INFO] Сервер готов принимать запросы
+2024-12-11 13:45:13,854 [INFO] Получен запрос return_address: "717f7c11-460b-4e0b-9f68-295a188f6f0a"
+request_id: "fbe60736-cf29-42b3-ae46-9ab00bf22b01"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 13:45:13,861 [INFO] Ответ отправлен в 717f7c11-460b-4e0b-9f68-295a188f6f0a: {'request_id': 'fbe60736-cf29-42b3-ae46-9ab00bf22b01', 'response': 4}
+2024-12-11 14:04:05,797 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "5ca7074c-66ea-4cab-933c-cd31bffe658d"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-11 14:04:05,805 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': '5ca7074c-66ea-4cab-933c-cd31bffe658d', 'response': 0}
+2024-12-11 14:04:07,369 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "5fb73674-8172-48c0-a642-b49a24388268"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 14:04:07,377 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': '5fb73674-8172-48c0-a642-b49a24388268', 'response': 4}
+2024-12-11 14:04:09,852 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "8de1a2c9-8b28-4f52-ac08-f9f2629e1eb8"
+proccess_time_in_seconds: 0
+request: 4
+
+2024-12-11 14:04:09,859 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': '8de1a2c9-8b28-4f52-ac08-f9f2629e1eb8', 'response': 8}
+2024-12-11 14:04:12,344 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "ea19755c-07bf-449e-98be-f67c858b69d2"
+proccess_time_in_seconds: 1
+request: 4
+
+2024-12-11 14:04:13,350 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': 'ea19755c-07bf-449e-98be-f67c858b69d2', 'response': 8}
+2024-12-11 14:04:20,058 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "76e99de1-f71c-4e70-b9c9-fbb66dc46b1a"
+proccess_time_in_seconds: 5
+request: 4
+
+2024-12-11 14:04:25,070 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': '76e99de1-f71c-4e70-b9c9-fbb66dc46b1a', 'response': 8}
+2024-12-11 14:05:02,237 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "d0e5e658-8da3-4f1c-bb36-b750b15de9e6"
+proccess_time_in_seconds: 5
+request: 4
+
+2024-12-11 14:05:07,245 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': 'd0e5e658-8da3-4f1c-bb36-b750b15de9e6', 'response': 8}
+2024-12-11 14:05:11,032 [INFO] Получен запрос return_address: "143fc95f-af84-4c18-b847-72d36e102772"
+request_id: "96a0a645-6187-41ae-a58c-f1790241d311"
+proccess_time_in_seconds: 0
+request: 4
+
+2024-12-11 14:05:11,038 [INFO] Ответ отправлен в 143fc95f-af84-4c18-b847-72d36e102772: {'request_id': '96a0a645-6187-41ae-a58c-f1790241d311', 'response': 8}
+2024-12-11 14:13:48,338 [INFO] Получен запрос return_address: "e5210616-4d88-4d00-956a-20b0800c7672"
+request_id: "41ec80e6-009f-468b-9f35-bf65d811ef9f"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 14:13:48,345 [INFO] Ответ отправлен в e5210616-4d88-4d00-956a-20b0800c7672: {'request_id': '41ec80e6-009f-468b-9f35-bf65d811ef9f', 'response': 4}
+2024-12-11 14:13:51,249 [INFO] Получен запрос return_address: "e5210616-4d88-4d00-956a-20b0800c7672"
+request_id: "358faee0-84ed-47ef-bd45-6eaf4cac3289"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-11 14:13:52,257 [INFO] Ответ отправлен в e5210616-4d88-4d00-956a-20b0800c7672: {'request_id': '358faee0-84ed-47ef-bd45-6eaf4cac3289', 'response': 4}
+2024-12-11 14:14:07,516 [INFO] Получен запрос return_address: "e5210616-4d88-4d00-956a-20b0800c7672"
+request_id: "78de4f37-1fbe-4b47-a04c-4cc6e6eafd09"
+proccess_time_in_seconds: 3
+request: 2
+
+2024-12-11 14:14:10,522 [INFO] Ответ отправлен в e5210616-4d88-4d00-956a-20b0800c7672: {'request_id': '78de4f37-1fbe-4b47-a04c-4cc6e6eafd09', 'response': 4}
+2024-12-11 14:19:20,576 [INFO] Получен запрос return_address: "67080532-a786-41cf-9856-2658421f39bf"
+request_id: "8f15418f-6dbe-419b-a21e-d76db16a05a4"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 14:19:20,583 [INFO] Ответ отправлен в 67080532-a786-41cf-9856-2658421f39bf: {'request_id': '8f15418f-6dbe-419b-a21e-d76db16a05a4', 'response': 4}
+2024-12-11 14:19:26,200 [INFO] Получен запрос return_address: "67080532-a786-41cf-9856-2658421f39bf"
+request_id: "564afaf2-391d-4412-9750-afaf36c19d69"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 14:19:27,206 [INFO] Ответ отправлен в 67080532-a786-41cf-9856-2658421f39bf: {'request_id': '564afaf2-391d-4412-9750-afaf36c19d69', 'response': 6}
+2024-12-11 14:25:23,896 [INFO] Получен запрос return_address: "a1bf7ea1-eae7-4812-88b5-cf577c4e9dc9"
+request_id: "d97d0740-d58e-43a7-a3e8-7bf8b08e7569"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 14:25:23,904 [INFO] Ответ отправлен в a1bf7ea1-eae7-4812-88b5-cf577c4e9dc9: {'request_id': 'd97d0740-d58e-43a7-a3e8-7bf8b08e7569', 'response': 4}
+2024-12-11 14:25:28,734 [INFO] Получен запрос return_address: "a1bf7ea1-eae7-4812-88b5-cf577c4e9dc9"
+request_id: "4c9de0f6-7473-4d13-856b-6d166e172bb7"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 14:25:28,740 [INFO] Ответ отправлен в a1bf7ea1-eae7-4812-88b5-cf577c4e9dc9: {'request_id': '4c9de0f6-7473-4d13-856b-6d166e172bb7', 'response': 6}
+2024-12-11 14:26:06,183 [INFO] Получен запрос return_address: "0ff07e35-ec4d-4da1-bdcc-546ec804c536"
+request_id: "22f9e790-2c83-44e3-aafb-ed275cf8f2e5"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-11 14:26:06,190 [INFO] Ответ отправлен в 0ff07e35-ec4d-4da1-bdcc-546ec804c536: {'request_id': '22f9e790-2c83-44e3-aafb-ed275cf8f2e5', 'response': 6}
+2024-12-11 14:26:15,335 [INFO] Получен запрос return_address: "0ff07e35-ec4d-4da1-bdcc-546ec804c536"
+request_id: "10b9171b-63d8-4fcb-816f-2051b1baf4ef"
+proccess_time_in_seconds: 1
+request: 4
+
+2024-12-11 14:26:16,343 [INFO] Ответ отправлен в 0ff07e35-ec4d-4da1-bdcc-546ec804c536: {'request_id': '10b9171b-63d8-4fcb-816f-2051b1baf4ef', 'response': 8}
+2024-12-11 14:32:03,169 [INFO] Получен запрос return_address: "f6a4c897-38ea-411c-a3f1-c3abd8d96f2b"
+request_id: "d270ac69-7fdb-4181-8f47-0536b1862a68"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-11 14:32:03,174 [INFO] Ответ отправлен в f6a4c897-38ea-411c-a3f1-c3abd8d96f2b: {'request_id': 'd270ac69-7fdb-4181-8f47-0536b1862a68', 'response': 4}
+2024-12-11 14:32:05,913 [INFO] Получен запрос return_address: "f6a4c897-38ea-411c-a3f1-c3abd8d96f2b"
+request_id: "78edb971-4a5e-4739-8fe6-c96f59cbe550"
+proccess_time_in_seconds: 1
+request: 4
+
+2024-12-11 14:32:06,919 [INFO] Ответ отправлен в f6a4c897-38ea-411c-a3f1-c3abd8d96f2b: {'request_id': '78edb971-4a5e-4739-8fe6-c96f59cbe550', 'response': 8}
+2024-12-11 14:32:37,294 [INFO] Получен запрос return_address: "f6a4c897-38ea-411c-a3f1-c3abd8d96f2b"
+request_id: "e90ec482-5050-4ff6-9e66-f7a39bc5b606"
+proccess_time_in_seconds: 1
+request: 4
+
+2024-12-11 14:32:38,301 [INFO] Ответ отправлен в f6a4c897-38ea-411c-a3f1-c3abd8d96f2b: {'request_id': 'e90ec482-5050-4ff6-9e66-f7a39bc5b606', 'response': 8}
+2024-12-11 14:33:03,823 [INFO] Получен запрос return_address: "f6a4c897-38ea-411c-a3f1-c3abd8d96f2b"
+request_id: "65a9e21d-6f18-42b7-bc84-d9321f9273ef"
+proccess_time_in_seconds: 1
+request: 5
+
+2024-12-11 14:33:04,830 [INFO] Ответ отправлен в f6a4c897-38ea-411c-a3f1-c3abd8d96f2b: {'request_id': '65a9e21d-6f18-42b7-bc84-d9321f9273ef', 'response': 10}
+2024-12-11 14:37:01,008 [INFO] Получен запрос return_address: "f6a4c897-38ea-411c-a3f1-c3abd8d96f2b"
+request_id: "58033c7c-c9fa-4fb6-9310-769dc3bc9a40"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-11 14:37:02,015 [INFO] Ответ отправлен в f6a4c897-38ea-411c-a3f1-c3abd8d96f2b: {'request_id': '58033c7c-c9fa-4fb6-9310-769dc3bc9a40', 'response': 2}
+2024-12-11 14:52:22,204 [INFO] Получен запрос return_address: "77e26300-f344-4420-a2ff-4f5391f292ed"
+request_id: "ca4aba3d-d3ec-4ee7-97ce-8e8c4ed8157a"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-11 14:52:22,212 [INFO] Ответ отправлен в 77e26300-f344-4420-a2ff-4f5391f292ed: {'request_id': 'ca4aba3d-d3ec-4ee7-97ce-8e8c4ed8157a', 'response': 2}
+2024-12-11 14:52:24,765 [INFO] Получен запрос return_address: "77e26300-f344-4420-a2ff-4f5391f292ed"
+request_id: "14ec400a-fb3b-478f-b5ca-775099c2ea0a"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-11 14:52:25,773 [INFO] Ответ отправлен в 77e26300-f344-4420-a2ff-4f5391f292ed: {'request_id': '14ec400a-fb3b-478f-b5ca-775099c2ea0a', 'response': 4}
+2024-12-11 14:53:26,935 [INFO] Получен запрос return_address: "77e26300-f344-4420-a2ff-4f5391f292ed"
+request_id: "13b7d3d1-f680-4084-ac31-12905f5df74e"
+proccess_time_in_seconds: 1
+request: 3
+
+2024-12-11 14:53:27,943 [INFO] Ответ отправлен в 77e26300-f344-4420-a2ff-4f5391f292ed: {'request_id': '13b7d3d1-f680-4084-ac31-12905f5df74e', 'response': 6}
+2024-12-11 15:52:33,732 [INFO] Получен запрос return_address: "e968c466-9099-4336-a5c2-41f3c625ad9b"
+request_id: "6f7ffc24-1dab-421c-a204-f58d99751c3f"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-11 15:52:33,740 [INFO] Ответ отправлен в e968c466-9099-4336-a5c2-41f3c625ad9b: {'request_id': '6f7ffc24-1dab-421c-a204-f58d99751c3f', 'response': 0}
+2024-12-12 14:30:45,697 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "1982c963-b4cc-4e87-b362-ad334497a6ae"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-12 14:30:45,705 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '1982c963-b4cc-4e87-b362-ad334497a6ae', 'response': 4}
+2024-12-12 14:31:08,466 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "5d8af972-fafb-4109-a568-9846e68c9b8c"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-12 14:31:09,473 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '5d8af972-fafb-4109-a568-9846e68c9b8c', 'response': 4}
+2024-12-12 14:31:18,301 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "2cdc3321-54bf-41e0-9c3c-11b4018eef6d"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-12 14:31:19,308 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '2cdc3321-54bf-41e0-9c3c-11b4018eef6d', 'response': 4}
+2024-12-12 14:31:24,591 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "58ea798c-8343-4392-b564-5a6bfc825d24"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-12 14:31:24,598 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '58ea798c-8343-4392-b564-5a6bfc825d24', 'response': 4}
+2024-12-12 14:31:41,205 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "1ef1c114-c00c-4de7-be05-d192b8c1ff3f"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-12 14:31:41,210 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '1ef1c114-c00c-4de7-be05-d192b8c1ff3f', 'response': 6}
+2024-12-12 14:32:04,430 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "6f19ef17-a1cf-45e5-9dcb-53184e6eb66c"
+proccess_time_in_seconds: 3
+request: 3
+
+2024-12-12 14:32:07,440 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '6f19ef17-a1cf-45e5-9dcb-53184e6eb66c', 'response': 6}
+2024-12-12 14:32:16,374 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "785195b9-cf33-4ce1-bf72-f591605a5388"
+proccess_time_in_seconds: 3
+request: 3
+
+2024-12-12 14:32:19,380 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': '785195b9-cf33-4ce1-bf72-f591605a5388', 'response': 6}
+2024-12-12 14:32:23,845 [INFO] Получен запрос return_address: "43f5bbb1-fb15-4cbd-9106-f21c136043f6"
+request_id: "e814949f-8773-4d94-b622-8d5bfc5d129b"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-12 14:32:23,853 [INFO] Ответ отправлен в 43f5bbb1-fb15-4cbd-9106-f21c136043f6: {'request_id': 'e814949f-8773-4d94-b622-8d5bfc5d129b', 'response': 6}
+2024-12-12 14:57:00,153 [INFO] Сервер готов принимать запросы
+2024-12-12 14:57:14,044 [INFO] Получен запрос return_address: "a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b"
+request_id: "e5fd8541-b141-4944-9d5b-0d7339726f03"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-12 14:57:14,050 [INFO] Ответ отправлен в a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b: {'request_id': 'e5fd8541-b141-4944-9d5b-0d7339726f03', 'response': 0}
+2024-12-12 14:57:29,779 [INFO] Получен запрос return_address: "a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b"
+request_id: "6dc0d3dc-e015-4a25-aeec-feafe60b0a34"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-12 14:57:29,785 [INFO] Ответ отправлен в a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b: {'request_id': '6dc0d3dc-e015-4a25-aeec-feafe60b0a34', 'response': 2}
+2024-12-12 14:57:31,811 [INFO] Получен запрос return_address: "a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b"
+request_id: "f1935686-8c6b-46fb-8e71-2a4f9d4acb3b"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-12 14:57:31,816 [INFO] Ответ отправлен в a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b: {'request_id': 'f1935686-8c6b-46fb-8e71-2a4f9d4acb3b', 'response': 2}
+2024-12-12 14:57:39,888 [INFO] Получен запрос return_address: "a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b"
+request_id: "acb59fd8-9635-48ef-afa7-8fa111b4af59"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-12 14:57:39,894 [INFO] Ответ отправлен в a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b: {'request_id': 'acb59fd8-9635-48ef-afa7-8fa111b4af59', 'response': 2}
+2024-12-12 14:57:42,277 [INFO] Получен запрос return_address: "a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b"
+request_id: "db6c167b-9bd1-410b-bacf-ee21958257c7"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-12 14:57:42,284 [INFO] Получен запрос return_address: "a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b"
+request_id: "5023b91a-695b-467b-a04f-a99b2b49fcc7"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-12 14:57:42,286 [INFO] Ответ отправлен в a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b: {'request_id': 'db6c167b-9bd1-410b-bacf-ee21958257c7', 'response': 2}
+2024-12-12 14:57:42,289 [INFO] Ответ отправлен в a53ff312-5c17-4ebf-aae3-1bf3a0ebaf6b: {'request_id': '5023b91a-695b-467b-a04f-a99b2b49fcc7', 'response': 2}
+2024-12-12 15:08:02,885 [INFO] Получен запрос return_address: "ef085cfc-b753-4fa8-98b0-2d43287c1cbd"
+request_id: "1f7ce8bd-9efc-4948-b505-314ffdb28ca8"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-12 15:08:02,890 [INFO] Ответ отправлен в ef085cfc-b753-4fa8-98b0-2d43287c1cbd: {'request_id': '1f7ce8bd-9efc-4948-b505-314ffdb28ca8', 'response': 0}
+2024-12-12 15:08:13,082 [INFO] Получен запрос return_address: "ef085cfc-b753-4fa8-98b0-2d43287c1cbd"
+request_id: "c9ecaca3-3a90-4c85-bf36-625ae9ceb331"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-12 15:08:13,088 [INFO] Ответ отправлен в ef085cfc-b753-4fa8-98b0-2d43287c1cbd: {'request_id': 'c9ecaca3-3a90-4c85-bf36-625ae9ceb331', 'response': 0}
