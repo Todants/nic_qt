@@ -38,6 +38,29 @@ class ClientState:
     WAITING = "Ожидание ответа от сервера"
     PROCESSING = "Обработка запроса"
 
+#
+# class RabbitMQWorker2:
+#     response_received = pyqtSignal(dict)
+#     connection_error = pyqtSignal(str)
+#     send_request_signal = pyqtSignal(int, float)
+#
+#     def __init__(self, broker_url, request_queue, response_queue):
+#         self.broker_url = broker_url
+#         self.request_queue = request_queue
+#         self.response_queue = response_queue
+#         self.request_id = None
+#         self.running = False
+#
+#         try:
+#             self.connection = pika.BlockingConnection(pika.URLParameters(self.broker_url))
+#             self.channel = self.connection.channel()
+#             self.channel.queue_declare(queue=self.response_queue, durable=True)
+#         except Exception as e:
+#             logging.error(f"Ошибка подключения к RabbitMQ: {str(e)}")
+#             self.connection_error.emit(f"Ошибка подключения: {str(e)}")
+#
+#         self.send_request_signal.connect(self._process_request)
+
 
 class RabbitMQWorker(QThread):
     response_received = pyqtSignal(dict)
@@ -50,19 +73,26 @@ class RabbitMQWorker(QThread):
         self.request_queue = request_queue
         self.response_queue = response_queue
         self.request_id = None
+        self.running = False
 
-        try:
-            self.connection = pika.BlockingConnection(pika.URLParameters(self.broker_url))
-            self.channel = self.connection.channel()
-            self.channel.queue_declare(queue=self.response_queue, durable=True)
-        except Exception as e:
-            logging.error(f"Ошибка подключения к RabbitMQ: {str(e)}")
-            self.connection_error.emit(f"Ошибка подключения: {str(e)}")
+        # try:
+        connection_params = pika.ConnectionParameters(
+            host=self.broker_url,
+            heartbeat=600
+        )
+        self.connection = pika.BlockingConnection(pika.URLParameters(self.broker_url))
+        self.channel = self.connection.channel()
+
+        self.channel.queue_declare(queue=self.response_queue, durable=True)
+        self.channel.queue_purge(queue=self.response_queue)
+        # except Exception as e:
+        #     logging.error(f"Ошибка подключения к RabbitMQ: {str(e)}")
+        #     self.connection_error.emit(f"Ошибка подключения: {str(e)}")
 
         self.send_request_signal.connect(self._process_request)
 
     def _process_request(self, number, process_time):
-        for _ in range(5):
+        while True:
             try:
                 self.request_id = str(uuid.uuid4())
 
@@ -103,19 +133,19 @@ class RabbitMQWorker(QThread):
             self.connection = pika.BlockingConnection(pika.URLParameters(self.broker_url))
             self.channel = self.connection.channel()
             self.channel.queue_declare(queue=self.response_queue, durable=True)
+
             logging.info("Переподключение выполнено успешно.")
         except Exception as e:
             logging.error(f"Ошибка переподключения: {str(e)}")
             self.connection_error.emit(f"Ошибка переподключения: {str(e)}")
 
     def stop(self):
-        ...
-        """if self.connection.is_open:
+        if self.connection.is_open:
             self.connection.close()
-            logging.info("Соединение с RabbitMQ закрыто.")"""
+            logging.info("Соединение с RabbitMQ закрыто.")
 
     def run(self):
-        for _ in range(5):
+        while True:
             try:
                 for method_frame, properties, body in self.channel.consume(self.response_queue):
                     response = Response()
@@ -152,9 +182,7 @@ class ClientApp(QMainWindow):
         self.config = load_config()
         self.broker_url = self.config["broker_url"]
         self.request_queue = self.config["request_queue"]
-        self.response_queue = str(uuid.uuid4()) self.config["uuid"]
-
-        self.current_state = ClientState.READY
+        self.response_queue = str(uuid.uuid4())
 
         self.init_ui()
 
@@ -165,6 +193,9 @@ class ClientApp(QMainWindow):
         )
         self.worker.response_received.connect(self.handle_response)
         self.worker.connection_error.connect(self.handle_error)
+
+        self.current_state = None
+        self.update_state(ClientState.READY)
 
     def init_ui(self):
         self.number_input = QSpinBox(self)
@@ -245,11 +276,13 @@ class ClientApp(QMainWindow):
         self.update_state(ClientState.WAITING)
 
         self.worker.send_request_signal.emit(number, process_time)
+
         if not self.worker.isRunning():
             self.worker.start()
 
     def cancel_request(self):
-        # self.worker.stop()
+        if self.worker.isRunning():
+            self.worker.stop()
         self.log("Пользователь отменил запрос", level="INFO")
         self.update_state(ClientState.READY)
 
@@ -277,7 +310,7 @@ class ClientApp(QMainWindow):
         logging.debug(message)
 
     def closeEvent(self, event):
-        if self.worker:
+        if self.worker.isRunning():
             self.worker.stop()
         event.accept()
 

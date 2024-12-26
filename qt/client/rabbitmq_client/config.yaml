@@ -1,3 +1,4 @@
-broker_url: "amqp://127.0.0.1:5672"
+broker_url: "localhost"
+broker_url2: "amqp://127.0.0.1:5672"
 response_queue: "responses_queue"
 request_queue: "requests_queue"

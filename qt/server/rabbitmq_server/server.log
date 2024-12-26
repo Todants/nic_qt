@@ -1228,3 +1228,549 @@ proccess_time_in_seconds: 0
 request: 0
 
 2024-12-12 15:08:13,088 [INFO] Ответ отправлен в ef085cfc-b753-4fa8-98b0-2d43287c1cbd: {'request_id': 'c9ecaca3-3a90-4c85-bf36-625ae9ceb331', 'response': 0}
+2024-12-19 14:55:53,496 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "da0c111a-c06c-4b80-b92d-6551a7393a31"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 14:55:54,504 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': 'da0c111a-c06c-4b80-b92d-6551a7393a31', 'response': 2}
+2024-12-19 14:55:57,993 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "cb8c82b3-78cd-4da6-a85d-94e4d7d302ad"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 14:55:59,002 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': 'cb8c82b3-78cd-4da6-a85d-94e4d7d302ad', 'response': 2}
+2024-12-19 14:56:05,378 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "290a24fc-0a9b-4d48-9157-dafb071a9843"
+proccess_time_in_seconds: 2
+request: 1
+
+2024-12-19 14:56:07,385 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '290a24fc-0a9b-4d48-9157-dafb071a9843', 'response': 2}
+2024-12-19 14:57:32,224 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "36fd3c82-9f8d-45d8-a5e4-f96cf4b7ffd1"
+proccess_time_in_seconds: 2
+request: 1
+
+2024-12-19 14:57:34,231 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '36fd3c82-9f8d-45d8-a5e4-f96cf4b7ffd1', 'response': 2}
+2024-12-19 14:57:34,240 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "42a70dc3-508b-4382-951e-d931aaf9d2d8"
+proccess_time_in_seconds: 2
+request: 1
+
+2024-12-19 14:57:36,247 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '42a70dc3-508b-4382-951e-d931aaf9d2d8', 'response': 2}
+2024-12-19 14:57:49,907 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "4b8f7403-f6d4-4d52-8e6f-e9193b3152b0"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 14:57:50,914 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '4b8f7403-f6d4-4d52-8e6f-e9193b3152b0', 'response': 4}
+2024-12-19 14:58:39,207 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "39631634-1f07-4b5f-87a9-1b80e66de676"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 14:58:39,214 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '39631634-1f07-4b5f-87a9-1b80e66de676', 'response': 4}
+2024-12-19 14:58:53,999 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "a2972482-5256-42c5-9634-690dd31b069d"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 14:58:54,005 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': 'a2972482-5256-42c5-9634-690dd31b069d', 'response': 4}
+2024-12-19 14:58:57,948 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "80496a7e-eed7-4366-9091-13be6b00defb"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 14:58:57,955 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '80496a7e-eed7-4366-9091-13be6b00defb', 'response': 4}
+2024-12-19 14:59:28,799 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "c5f45d37-3a2c-4d7b-8c58-886c95cfdb58"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 14:59:28,805 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': 'c5f45d37-3a2c-4d7b-8c58-886c95cfdb58', 'response': 4}
+2024-12-19 15:00:05,709 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "f42f7b4d-2918-417a-8caf-7c0945488cbb"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 15:00:05,714 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': 'f42f7b4d-2918-417a-8caf-7c0945488cbb', 'response': 4}
+2024-12-19 15:01:44,410 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "53a1047e-5d00-42e4-b0ba-f0ad787a1837"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:01:45,416 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '53a1047e-5d00-42e4-b0ba-f0ad787a1837', 'response': 4}
+2024-12-19 15:01:52,414 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "8377ab63-d33f-4e4b-882c-2e97e72da16b"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:01:53,419 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '8377ab63-d33f-4e4b-882c-2e97e72da16b', 'response': 4}
+2024-12-19 15:02:22,316 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "faeb0a02-402d-4b6c-aa46-e9fe17e9f751"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:02:23,321 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': 'faeb0a02-402d-4b6c-aa46-e9fe17e9f751', 'response': 4}
+2024-12-19 15:02:24,355 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "688b4a56-4a0a-4415-8f03-fd7c891c6ae4"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:02:25,361 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '688b4a56-4a0a-4415-8f03-fd7c891c6ae4', 'response': 4}
+2024-12-19 15:02:33,075 [INFO] Получен запрос return_address: "6665baa7-0f92-4040-88ad-282b1232dd97"
+request_id: "57ab52eb-b1fd-4dee-b5ab-74d0a713a32e"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:02:34,083 [INFO] Ответ отправлен в 6665baa7-0f92-4040-88ad-282b1232dd97: {'request_id': '57ab52eb-b1fd-4dee-b5ab-74d0a713a32e', 'response': 4}
+2024-12-19 15:04:58,442 [INFO] Получен запрос return_address: "4f1a95c6-0572-4563-834c-42f381d28bbd"
+request_id: "e84707f9-fdb0-4ee7-bc6d-166856083bd5"
+proccess_time_in_seconds: 1
+request: 0
+
+2024-12-19 15:04:59,449 [INFO] Ответ отправлен в 4f1a95c6-0572-4563-834c-42f381d28bbd: {'request_id': 'e84707f9-fdb0-4ee7-bc6d-166856083bd5', 'response': 0}
+2024-12-19 15:05:04,394 [INFO] Получен запрос return_address: "4f1a95c6-0572-4563-834c-42f381d28bbd"
+request_id: "b7ff20e9-17d2-457d-89b3-110c30fecc9d"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:05:04,402 [INFO] Ответ отправлен в 4f1a95c6-0572-4563-834c-42f381d28bbd: {'request_id': 'b7ff20e9-17d2-457d-89b3-110c30fecc9d', 'response': 2}
+2024-12-19 15:05:29,888 [INFO] Получен запрос return_address: "4f1a95c6-0572-4563-834c-42f381d28bbd"
+request_id: "a81b8013-cb02-42d2-beb4-a41a15470a2d"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:05:30,895 [INFO] Ответ отправлен в 4f1a95c6-0572-4563-834c-42f381d28bbd: {'request_id': 'a81b8013-cb02-42d2-beb4-a41a15470a2d', 'response': 4}
+2024-12-19 15:05:42,330 [INFO] Получен запрос return_address: "4f1a95c6-0572-4563-834c-42f381d28bbd"
+request_id: "3544d08d-3d8d-4723-ba0b-306698f5883f"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:05:43,336 [INFO] Ответ отправлен в 4f1a95c6-0572-4563-834c-42f381d28bbd: {'request_id': '3544d08d-3d8d-4723-ba0b-306698f5883f', 'response': 4}
+2024-12-19 15:06:59,753 [INFO] Получен запрос return_address: "4f1a95c6-0572-4563-834c-42f381d28bbd"
+request_id: "9d52621c-55c6-4e5b-8ab2-21743873aaca"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 15:06:59,758 [INFO] Ответ отправлен в 4f1a95c6-0572-4563-834c-42f381d28bbd: {'request_id': '9d52621c-55c6-4e5b-8ab2-21743873aaca', 'response': 4}
+2024-12-19 15:07:16,315 [INFO] Получен запрос return_address: "4f1a95c6-0572-4563-834c-42f381d28bbd"
+request_id: "4e4736b2-4008-4c82-902f-ce1f6a0bd7cd"
+proccess_time_in_seconds: 0
+request: 3
+
+2024-12-19 15:07:16,320 [INFO] Ответ отправлен в 4f1a95c6-0572-4563-834c-42f381d28bbd: {'request_id': '4e4736b2-4008-4c82-902f-ce1f6a0bd7cd', 'response': 6}
+2024-12-19 15:10:26,167 [INFO] Получен запрос return_address: "0d0d949a-7830-4624-8874-bbf27052447e"
+request_id: "3250c51f-3499-47e7-aa84-25b6b0c16423"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:10:26,177 [INFO] Ответ отправлен в 0d0d949a-7830-4624-8874-bbf27052447e: {'request_id': '3250c51f-3499-47e7-aa84-25b6b0c16423', 'response': 2}
+2024-12-19 15:10:40,340 [INFO] Получен запрос return_address: "0d0d949a-7830-4624-8874-bbf27052447e"
+request_id: "7467faa1-82bc-4b5a-a5de-3d3270c2c4d0"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:10:40,345 [INFO] Ответ отправлен в 0d0d949a-7830-4624-8874-bbf27052447e: {'request_id': '7467faa1-82bc-4b5a-a5de-3d3270c2c4d0', 'response': 2}
+2024-12-19 15:16:02,844 [INFO] Получен запрос return_address: "0890541a-dfac-490b-8b2e-3af5643c2f3c"
+request_id: "78ac4450-ebc5-4f5e-9ef9-094231890fdf"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:16:02,848 [INFO] Ответ отправлен в 0890541a-dfac-490b-8b2e-3af5643c2f3c: {'request_id': '78ac4450-ebc5-4f5e-9ef9-094231890fdf', 'response': 2}
+2024-12-19 15:16:11,918 [INFO] Получен запрос return_address: "0890541a-dfac-490b-8b2e-3af5643c2f3c"
+request_id: "2bc9e6f4-df50-45fd-a0a0-4b488112fe50"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:16:11,923 [INFO] Ответ отправлен в 0890541a-dfac-490b-8b2e-3af5643c2f3c: {'request_id': '2bc9e6f4-df50-45fd-a0a0-4b488112fe50', 'response': 2}
+2024-12-19 15:16:41,153 [INFO] Получен запрос return_address: "66f7d3d0-a1d4-444b-a06e-3e16a0c52176"
+request_id: "ad5f9ae9-ba2b-48dc-a06c-f5174ad6e4cd"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 15:16:41,160 [INFO] Ответ отправлен в 66f7d3d0-a1d4-444b-a06e-3e16a0c52176: {'request_id': 'ad5f9ae9-ba2b-48dc-a06c-f5174ad6e4cd', 'response': 4}
+2024-12-19 15:16:45,211 [INFO] Получен запрос return_address: "66f7d3d0-a1d4-444b-a06e-3e16a0c52176"
+request_id: "ddb2adbc-dede-4e2c-9270-8ad106d6b4cc"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 15:16:45,217 [INFO] Ответ отправлен в 66f7d3d0-a1d4-444b-a06e-3e16a0c52176: {'request_id': 'ddb2adbc-dede-4e2c-9270-8ad106d6b4cc', 'response': 4}
+2024-12-19 15:16:47,248 [INFO] Получен запрос return_address: "66f7d3d0-a1d4-444b-a06e-3e16a0c52176"
+request_id: "9e888e76-611c-4c1b-8d60-8529b05ffcd7"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 15:16:47,254 [INFO] Ответ отправлен в 66f7d3d0-a1d4-444b-a06e-3e16a0c52176: {'request_id': '9e888e76-611c-4c1b-8d60-8529b05ffcd7', 'response': 4}
+2024-12-19 15:16:57,395 [INFO] Получен запрос return_address: "66f7d3d0-a1d4-444b-a06e-3e16a0c52176"
+request_id: "3e441206-149c-465d-a702-7ec02c25efb8"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 15:16:58,402 [INFO] Ответ отправлен в 66f7d3d0-a1d4-444b-a06e-3e16a0c52176: {'request_id': '3e441206-149c-465d-a702-7ec02c25efb8', 'response': 4}
+2024-12-19 15:23:38,876 [INFO] Получен запрос return_address: "439b1eb3-fd3d-4812-b7c9-46143bedae02"
+request_id: "73bc454c-3547-4977-84f1-4fa157002c57"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:23:38,882 [INFO] Ответ отправлен в 439b1eb3-fd3d-4812-b7c9-46143bedae02: {'request_id': '73bc454c-3547-4977-84f1-4fa157002c57', 'response': 0}
+2024-12-19 15:23:45,305 [INFO] Получен запрос return_address: "439b1eb3-fd3d-4812-b7c9-46143bedae02"
+request_id: "33bb6351-d6d5-43d5-9d9c-ad61fda04486"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:23:45,312 [INFO] Ответ отправлен в 439b1eb3-fd3d-4812-b7c9-46143bedae02: {'request_id': '33bb6351-d6d5-43d5-9d9c-ad61fda04486', 'response': 2}
+2024-12-19 15:23:47,337 [INFO] Получен запрос return_address: "439b1eb3-fd3d-4812-b7c9-46143bedae02"
+request_id: "b1ce8d23-55f7-44bc-b439-a6fa9e8b511b"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:23:47,343 [INFO] Ответ отправлен в 439b1eb3-fd3d-4812-b7c9-46143bedae02: {'request_id': 'b1ce8d23-55f7-44bc-b439-a6fa9e8b511b', 'response': 2}
+2024-12-19 15:27:16,651 [INFO] Получен запрос return_address: "9c654369-4cc9-413b-bd7d-4fab026a214e"
+request_id: "ad608571-1df2-4d7f-b1eb-c23fbcc2dec5"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:27:16,657 [INFO] Ответ отправлен в 9c654369-4cc9-413b-bd7d-4fab026a214e: {'request_id': 'ad608571-1df2-4d7f-b1eb-c23fbcc2dec5', 'response': 0}
+2024-12-19 15:30:34,552 [INFO] Получен запрос return_address: "74eff81a-d73c-49f0-8fae-6d16e440b442"
+request_id: "bd498ef4-524a-4483-ab3b-dc04d1f465f9"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:30:34,558 [INFO] Ответ отправлен в 74eff81a-d73c-49f0-8fae-6d16e440b442: {'request_id': 'bd498ef4-524a-4483-ab3b-dc04d1f465f9', 'response': 0}
+2024-12-19 15:30:36,590 [INFO] Получен запрос return_address: "74eff81a-d73c-49f0-8fae-6d16e440b442"
+request_id: "46570f6e-ca33-4819-8e1f-c0c86a195d60"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:30:36,596 [INFO] Ответ отправлен в 74eff81a-d73c-49f0-8fae-6d16e440b442: {'request_id': '46570f6e-ca33-4819-8e1f-c0c86a195d60', 'response': 0}
+2024-12-19 15:32:50,732 [INFO] Получен запрос return_address: "37b2a834-7438-4ad1-b33e-9bf9803c5a0a"
+request_id: "f51b8e22-36a2-4057-b06b-f1fbdee2bc0d"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:32:50,738 [INFO] Ответ отправлен в 37b2a834-7438-4ad1-b33e-9bf9803c5a0a: {'request_id': 'f51b8e22-36a2-4057-b06b-f1fbdee2bc0d', 'response': 0}
+2024-12-19 15:33:02,448 [INFO] Получен запрос return_address: "37b2a834-7438-4ad1-b33e-9bf9803c5a0a"
+request_id: "21a1475b-3baf-4c63-ad31-6cb02e67baff"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:33:02,455 [INFO] Ответ отправлен в 37b2a834-7438-4ad1-b33e-9bf9803c5a0a: {'request_id': '21a1475b-3baf-4c63-ad31-6cb02e67baff', 'response': 0}
+2024-12-19 15:33:21,881 [INFO] Получен запрос return_address: "37b2a834-7438-4ad1-b33e-9bf9803c5a0a"
+request_id: "fd5bd00c-444c-47a1-b34e-7a21a778a753"
+proccess_time_in_seconds: 1
+request: 0
+
+2024-12-19 15:33:22,887 [INFO] Ответ отправлен в 37b2a834-7438-4ad1-b33e-9bf9803c5a0a: {'request_id': 'fd5bd00c-444c-47a1-b34e-7a21a778a753', 'response': 0}
+2024-12-19 15:34:20,184 [INFO] Получен запрос return_address: "37b2a834-7438-4ad1-b33e-9bf9803c5a0a"
+request_id: "27634c9f-3578-4ee5-88bb-ecbcb95df5d6"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 15:34:21,195 [INFO] Ответ отправлен в 37b2a834-7438-4ad1-b33e-9bf9803c5a0a: {'request_id': '27634c9f-3578-4ee5-88bb-ecbcb95df5d6', 'response': 2}
+2024-12-19 15:35:47,871 [INFO] Получен запрос return_address: "19df619c-ee46-4011-9d81-c1214a7b4ead"
+request_id: "0de4e872-4d53-4f58-ac3b-dbac03d90d7c"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 15:35:47,876 [INFO] Ответ отправлен в 19df619c-ee46-4011-9d81-c1214a7b4ead: {'request_id': '0de4e872-4d53-4f58-ac3b-dbac03d90d7c', 'response': 0}
+2024-12-19 15:35:51,604 [INFO] Получен запрос return_address: "19df619c-ee46-4011-9d81-c1214a7b4ead"
+request_id: "c70526d6-e592-4765-acd8-3d65dc4a2951"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:35:51,611 [INFO] Ответ отправлен в 19df619c-ee46-4011-9d81-c1214a7b4ead: {'request_id': 'c70526d6-e592-4765-acd8-3d65dc4a2951', 'response': 2}
+2024-12-19 15:35:57,696 [INFO] Получен запрос return_address: "19df619c-ee46-4011-9d81-c1214a7b4ead"
+request_id: "10acc302-87ac-4f98-9d33-79f4c6b797c4"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:35:57,703 [INFO] Ответ отправлен в 19df619c-ee46-4011-9d81-c1214a7b4ead: {'request_id': '10acc302-87ac-4f98-9d33-79f4c6b797c4', 'response': 2}
+2024-12-19 15:38:59,292 [INFO] Получен запрос return_address: "19df619c-ee46-4011-9d81-c1214a7b4ead"
+request_id: "aac8a191-b06e-485d-927c-c88b84488162"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 15:38:59,299 [INFO] Ответ отправлен в 19df619c-ee46-4011-9d81-c1214a7b4ead: {'request_id': 'aac8a191-b06e-485d-927c-c88b84488162', 'response': 2}
+2024-12-19 16:23:42,333 [INFO] Получен запрос return_address: "3d9e3886-1625-469e-9d40-183a452a7447"
+request_id: "195576b9-ec74-4fda-9491-c5acbb8491f6"
+proccess_time_in_seconds: 0
+request: 0
+
+2024-12-19 16:23:42,339 [INFO] Ответ отправлен в 3d9e3886-1625-469e-9d40-183a452a7447: {'request_id': '195576b9-ec74-4fda-9491-c5acbb8491f6', 'response': 0}
+2024-12-19 16:23:45,092 [INFO] Получен запрос return_address: "3d9e3886-1625-469e-9d40-183a452a7447"
+request_id: "3e7cd340-5f02-44b8-9ed6-9f761e06d78f"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 16:23:46,099 [INFO] Ответ отправлен в 3d9e3886-1625-469e-9d40-183a452a7447: {'request_id': '3e7cd340-5f02-44b8-9ed6-9f761e06d78f', 'response': 2}
+2024-12-19 16:23:50,014 [INFO] Получен запрос return_address: "3d9e3886-1625-469e-9d40-183a452a7447"
+request_id: "24f5b909-e19e-4420-9419-361accb50273"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 16:23:51,021 [INFO] Ответ отправлен в 3d9e3886-1625-469e-9d40-183a452a7447: {'request_id': '24f5b909-e19e-4420-9419-361accb50273', 'response': 2}
+2024-12-19 16:24:02,561 [INFO] Получен запрос return_address: "3d9e3886-1625-469e-9d40-183a452a7447"
+request_id: "39a8af62-3221-42d6-8869-cd519ef9e43a"
+proccess_time_in_seconds: 1
+request: 2
+
+2024-12-19 16:24:03,568 [INFO] Ответ отправлен в 3d9e3886-1625-469e-9d40-183a452a7447: {'request_id': '39a8af62-3221-42d6-8869-cd519ef9e43a', 'response': 4}
+2024-12-19 17:25:37,622 [INFO] Получен запрос return_address: "ebd2ecf7-351e-4f16-882f-858544b995e7"
+request_id: "5ade9b3d-903c-46a6-b082-86acbc280a2a"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:25:37,627 [INFO] Ответ отправлен в ebd2ecf7-351e-4f16-882f-858544b995e7: {'request_id': '5ade9b3d-903c-46a6-b082-86acbc280a2a', 'response': 2}
+2024-12-19 17:25:42,943 [INFO] Получен запрос return_address: "ebd2ecf7-351e-4f16-882f-858544b995e7"
+request_id: "5329b86a-5f01-42eb-b936-7a18d1f6a2b6"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 17:25:43,951 [INFO] Ответ отправлен в ebd2ecf7-351e-4f16-882f-858544b995e7: {'request_id': '5329b86a-5f01-42eb-b936-7a18d1f6a2b6', 'response': 2}
+2024-12-19 17:25:51,063 [INFO] Получен запрос return_address: "ebd2ecf7-351e-4f16-882f-858544b995e7"
+request_id: "dc6a0e34-ddf1-4556-a156-058a6b9df273"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 17:25:52,069 [INFO] Ответ отправлен в ebd2ecf7-351e-4f16-882f-858544b995e7: {'request_id': 'dc6a0e34-ddf1-4556-a156-058a6b9df273', 'response': 2}
+2024-12-19 17:35:30,611 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "ed809c11-7703-4695-ad09-a1feb5e0d37e"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:35:30,617 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'ed809c11-7703-4695-ad09-a1feb5e0d37e', 'response': 2}
+2024-12-19 17:35:37,532 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "aa0f9534-1378-4f19-a8ee-bcb1daf08940"
+proccess_time_in_seconds: 1
+request: 1
+
+2024-12-19 17:35:38,539 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'aa0f9534-1378-4f19-a8ee-bcb1daf08940', 'response': 2}
+2024-12-19 17:35:51,870 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "8c70b495-14cc-41bf-9018-4a746dec10b7"
+proccess_time_in_seconds: 2
+request: 2
+
+2024-12-19 17:35:53,879 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '8c70b495-14cc-41bf-9018-4a746dec10b7', 'response': 4}
+2024-12-19 17:35:55,932 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "d7f86451-0e9f-4fca-b1f7-3f92c6fc9616"
+proccess_time_in_seconds: 2
+request: 2
+
+2024-12-19 17:35:57,939 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'd7f86451-0e9f-4fca-b1f7-3f92c6fc9616', 'response': 4}
+2024-12-19 17:36:17,780 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "c5aa759d-c62e-49e7-813e-652e4428b696"
+proccess_time_in_seconds: 2
+request: 2
+
+2024-12-19 17:36:19,788 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'c5aa759d-c62e-49e7-813e-652e4428b696', 'response': 4}
+2024-12-19 17:41:12,312 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "e584cbd2-4463-4f41-b0ff-43f9e792bd08"
+proccess_time_in_seconds: 2
+request: 3
+
+2024-12-19 17:41:14,318 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'e584cbd2-4463-4f41-b0ff-43f9e792bd08', 'response': 6}
+2024-12-19 17:41:20,085 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "f541e67f-3751-4bc1-9a8e-6a08321607b7"
+proccess_time_in_seconds: 2
+request: 3
+
+2024-12-19 17:41:22,092 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'f541e67f-3751-4bc1-9a8e-6a08321607b7', 'response': 6}
+2024-12-19 17:41:27,547 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "74a48abc-d11a-481e-b449-a3bfe0337c57"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 17:41:27,552 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '74a48abc-d11a-481e-b449-a3bfe0337c57', 'response': 4}
+2024-12-19 17:41:35,960 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "73aa565a-3f65-4ffb-8813-5805f49c9132"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 17:41:35,966 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '73aa565a-3f65-4ffb-8813-5805f49c9132', 'response': 4}
+2024-12-19 17:41:48,939 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "0b387ba7-5b05-4517-8340-1944163cb55d"
+proccess_time_in_seconds: 0
+request: 2
+
+2024-12-19 17:41:48,946 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '0b387ba7-5b05-4517-8340-1944163cb55d', 'response': 4}
+2024-12-19 17:42:00,570 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "d435cf0c-3c66-4aa4-95a9-3c892faf3d38"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:42:00,576 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': 'd435cf0c-3c66-4aa4-95a9-3c892faf3d38', 'response': 2}
+2024-12-19 17:43:36,235 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "3949b65b-2209-4e01-89f9-8995f9fa9964"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:43:36,243 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '3949b65b-2209-4e01-89f9-8995f9fa9964', 'response': 2}
+2024-12-19 17:43:36,244 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "77c6211b-64d9-479b-af93-6858c6f6c06b"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:43:36,251 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '77c6211b-64d9-479b-af93-6858c6f6c06b', 'response': 2}
+2024-12-19 17:43:49,886 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "978526e4-7808-40cf-b200-1bdae8059ef8"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:43:49,892 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '978526e4-7808-40cf-b200-1bdae8059ef8', 'response': 2}
+2024-12-19 17:45:09,620 [INFO] Получен запрос return_address: "ee65e1c6-fa55-485b-9cad-08ca004a5a9b"
+request_id: "1e3ac792-0671-4356-8d59-ac76cd818abd"
+proccess_time_in_seconds: 0
+request: 1
+
+2024-12-19 17:45:09,626 [INFO] Ответ отправлен в ee65e1c6-fa55-485b-9cad-08ca004a5a9b: {'request_id': '1e3ac792-0671-4356-8d59-ac76cd818abd', 'response': 2}
+2024-12-25 12:02:34,319 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22680' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,320 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22681' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,321 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22682' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,321 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22683' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,322 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22684' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,322 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22685' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,323 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22686' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,323 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22687' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,324 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22688' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,325 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22689' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,325 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22690' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,326 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22691' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,326 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22692' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,327 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22693' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,327 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22694' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,328 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22695' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,328 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22696' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,329 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22697' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,329 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22698' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,330 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22699' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,331 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22700' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,331 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22701' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,332 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22702' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,333 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22703' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,333 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22704' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,334 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22705' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,336 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22706' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,337 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22707' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,338 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22708' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,338 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22709' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,339 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22710' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,339 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22711' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,340 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22712' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,340 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22713' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,341 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22714' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,341 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22715' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,342 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22716' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,342 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22717' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,343 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22718' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,343 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22719' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,344 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22720' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,344 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22721' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,345 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22722' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,345 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22723' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,346 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22724' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,346 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22725' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,347 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22726' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,348 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22727' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,348 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22728' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,349 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22729' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,350 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22731' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,351 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22732' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,351 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22733' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,352 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22734' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,352 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22735' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,353 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22736' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,353 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22737' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,354 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22738' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,354 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22739' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,355 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22740' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,356 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22741' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,356 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22742' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,357 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22743' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,357 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22744' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,358 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22745' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,358 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22746' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,359 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22747' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,359 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22748' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,360 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22749' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,361 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22750' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,361 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22751' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,362 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22752' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,362 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22753' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,363 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22754' coro=<OneShotCallback.__task_inner() done, defined at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:295>>
+2024-12-25 12:02:34,376 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-22730' coro=<OneShotCallback.__task_inner() running at /home/user/PycharmProjects/qt/.venv/lib/python3.10/site-packages/aio_pika/tools.py:301>>
