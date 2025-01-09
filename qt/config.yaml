@@ -1,6 +1,7 @@
 broker_url: amqp://127.0.0.1:5672
-log_level: INFO
+connection_timeout: 10
+log_level: DEBUG
 log_path: server.log
 request_queue: requests_queue
 response_queue: responses_queue
-uuid: None
+uuid: f325cfac-f7aa-47ac-990f-38509a7d42f0

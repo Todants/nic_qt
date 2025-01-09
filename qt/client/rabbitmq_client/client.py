@@ -1,29 +1,30 @@
 import datetime
-import json
-import os
+import logging
 import sys
 import time
 import uuid
-import logging
+from urllib.parse import urlparse
+
 import pika
 import yaml
+from PyQt5.QtCore import QThread, pyqtSignal, pyqtSlot, QRegExp
+from PyQt5.QtGui import QRegExpValidator
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QLabel, QSpinBox, QDoubleSpinBox, QCheckBox,
-    QPushButton, QTextEdit, QVBoxLayout, QHBoxLayout, QWidget, QLineEdit, QDialog
+    QPushButton, QTextEdit, QVBoxLayout, QHBoxLayout, QWidget, QLineEdit, QDialog, QScrollArea, QComboBox, QMessageBox
 )
-from PyQt5.QtCore import QThread, pyqtSignal, pyqtSlot
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../protos')))
-from messages_pb2 import Request, Response
+
+from qt.protos import messages_pb2
 
 logging.basicConfig(level=logging.DEBUG)
 
 
 def load_config():
     try:
-        with open("../../config.yaml", "r") as file:
-            config = yaml.safe_load(file)
+        with open("../../config.yaml", "r") as f:
+            config = yaml.safe_load(f)
     except FileNotFoundError:
-        config = {"log_level": "INFO", "log_path": "/var/log/app.log"}
+        config = {"client_log_level": "INFO", "log_path": "/var/log/app.log"}
         raise ValueError
     return config
 
@@ -38,56 +39,36 @@ class ClientState:
     WAITING = "Ожидание ответа от сервера"
     PROCESSING = "Обработка запроса"
 
-#
-# class RabbitMQWorker2:
-#     response_received = pyqtSignal(dict)
-#     connection_error = pyqtSignal(str)
-#     send_request_signal = pyqtSignal(int, float)
-#
-#     def __init__(self, broker_url, request_queue, response_queue):
-#         self.broker_url = broker_url
-#         self.request_queue = request_queue
-#         self.response_queue = response_queue
-#         self.request_id = None
-#         self.running = False
-#
-#         try:
-#             self.connection = pika.BlockingConnection(pika.URLParameters(self.broker_url))
-#             self.channel = self.connection.channel()
-#             self.channel.queue_declare(queue=self.response_queue, durable=True)
-#         except Exception as e:
-#             logging.error(f"Ошибка подключения к RabbitMQ: {str(e)}")
-#             self.connection_error.emit(f"Ошибка подключения: {str(e)}")
-#
-#         self.send_request_signal.connect(self._process_request)
-
 
 class RabbitMQWorker(QThread):
     response_received = pyqtSignal(dict)
     connection_error = pyqtSignal(str)
     send_request_signal = pyqtSignal(int, float)
 
-    def __init__(self, broker_url, request_queue, response_queue):
+    def __init__(self, broker_url, request_queue, response_queue, timeout):
         super().__init__()
         self.broker_url = broker_url
         self.request_queue = request_queue
         self.response_queue = response_queue
         self.request_id = None
         self.running = False
+        self.timeout = timeout
 
-        # try:
+        parsed_url = urlparse(self.broker_url)
+        if parsed_url.scheme != 'amqp':
+            raise ValueError("Invalid broker URL. Must start with 'amqp://'")
+
         connection_params = pika.ConnectionParameters(
-            host=self.broker_url,
-            heartbeat=600
+            host=parsed_url.hostname,
+            port=parsed_url.port,
+            heartbeat=600,
+            blocked_connection_timeout=self.timeout
         )
-        self.connection = pika.BlockingConnection(pika.URLParameters(self.broker_url))
+        self.connection = pika.BlockingConnection(connection_params)
         self.channel = self.connection.channel()
 
         self.channel.queue_declare(queue=self.response_queue, durable=True)
         self.channel.queue_purge(queue=self.response_queue)
-        # except Exception as e:
-        #     logging.error(f"Ошибка подключения к RabbitMQ: {str(e)}")
-        #     self.connection_error.emit(f"Ошибка подключения: {str(e)}")
 
         self.send_request_signal.connect(self._process_request)
 
@@ -96,7 +77,7 @@ class RabbitMQWorker(QThread):
             try:
                 self.request_id = str(uuid.uuid4())
 
-                request = Request(
+                request = messages_pb2.Request(
                     return_address=self.response_queue,
                     request_id=self.request_id,
                     request=number,
@@ -148,24 +129,25 @@ class RabbitMQWorker(QThread):
         while True:
             try:
                 for method_frame, properties, body in self.channel.consume(self.response_queue):
-                    response = Response()
+                    response = messages_pb2.Response()
                     response.ParseFromString(body)
 
                     if response.request_id == self.request_id:
                         logging.info(f"Получен ответ: {response}")
                         self.response_received.emit({
-                            "status": "OK",
+                            "status": "200",
                             "response": {
                                 "request_id": response.request_id,
                                 "result": response.response
                             }
                         })
-
-                        self.channel.basic_ack(method_frame.delivery_tag)
                         break
                     else:
+                        self.response_received.emit({
+                            "status": "204"
+                        })
                         logging.warning(f"Пропущен неподходящий ответ: {response}")
-                        self.channel.basic_ack(method_frame.delivery_tag)
+                    self.channel.basic_ack(method_frame.delivery_tag)
 
             except Exception as e:
                 logging.error("Ошибка соединения, перезапускаем соединение.")
@@ -174,22 +156,25 @@ class RabbitMQWorker(QThread):
 
 
 class ClientApp(QMainWindow):
+    state_changed = pyqtSignal(str)
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("RabbitMQ Client")
-        self.setGeometry(100, 100, 600, 400)
+        self.setGeometry(100, 100, 620, 400)
 
         self.config = load_config()
         self.broker_url = self.config["broker_url"]
-        self.request_queue = self.config["request_queue"]
-        self.response_queue = str(uuid.uuid4())
+        self.config["uuid"] = self.response_queue = str(uuid.uuid4()) if self.config["uuid"] == "None" else self.config[
+            "uuid"]
 
         self.init_ui()
 
         self.worker = RabbitMQWorker(
             broker_url=self.broker_url,
-            request_queue=self.request_queue,
-            response_queue=self.response_queue
+            request_queue=self.config["request_queue"],
+            response_queue=self.response_queue,
+            timeout=self.config["connection_timeout"]
         )
         self.worker.response_received.connect(self.handle_response)
         self.worker.connection_error.connect(self.handle_error)
@@ -198,11 +183,12 @@ class ClientApp(QMainWindow):
         self.update_state(ClientState.READY)
 
     def init_ui(self):
-        self.number_input = QSpinBox(self)
-        self.number_input.setRange(0, 1000)
+        self.number_input = QDoubleSpinBox(self)
+        self.number_input.setRange(-1073741824, 1073741823)  # Установите допустимый диапазон значений
+        self.number_input.setDecimals(2)
 
         self.time_input = QDoubleSpinBox(self)
-        self.time_input.setRange(0.1, 10.0)
+        self.time_input.setRange(0.0, 100000.0)
         self.time_input.setValue(1.0)
         self.time_checkbox = QCheckBox("Время обработки:", self)
         self.time_checkbox.setChecked(False)
@@ -250,7 +236,7 @@ class ClientApp(QMainWindow):
         self.setCentralWidget(central_widget)
 
     def open_settings(self):
-        self.settings_dialog = SettingsDialog(self.config)
+        self.settings_dialog = SettingsDialog(config=self.config, parent_state=self.current_state, parent=self)
         self.settings_dialog.settings_updated.connect(self.update_config)
         self.settings_dialog.exec_()
 
@@ -261,12 +247,9 @@ class ClientApp(QMainWindow):
     def update_state(self, state):
         self.current_state = state
         self.state_label.setText(f"Состояние: {state}")
-        if state == ClientState.READY:
-            self.send_button.setEnabled(True)
-            self.cancel_button.setEnabled(False)
-        elif state == ClientState.WAITING:
-            self.send_button.setEnabled(False)
-            self.cancel_button.setEnabled(True)
+        self.state_changed.emit(state)
+        self.send_button.setEnabled(state == ClientState.READY)
+        self.cancel_button.setEnabled(state == ClientState.WAITING)
 
     def send_request(self):
         number = self.number_input.value()
@@ -281,15 +264,13 @@ class ClientApp(QMainWindow):
             self.worker.start()
 
     def cancel_request(self):
-        if self.worker.isRunning():
-            self.worker.stop()
         self.log("Пользователь отменил запрос", level="INFO")
         self.update_state(ClientState.READY)
 
     @pyqtSlot(dict)
     def handle_response(self, response):
-        if self.current_state == ClientState.WAITING:
-            self.log(f"Получен ответ: {response}", level="INFO")
+        if response['status'] == "200":
+            self.log(f"Получен ответ: {response['response']}", level="INFO")
             self.response_label.setText(f"Ответ: {response['response']['result']}")
             self.update_state(ClientState.READY)
         else:
@@ -310,7 +291,11 @@ class ClientApp(QMainWindow):
         logging.debug(message)
 
     def closeEvent(self, event):
+        self.channel.close()
+        self.connection.close()
+
         if self.worker.isRunning():
+            self.worker.running = False
             self.worker.stop()
         event.accept()
 
@@ -318,34 +303,101 @@ class ClientApp(QMainWindow):
 class SettingsDialog(QDialog):
     settings_updated = pyqtSignal(dict)
 
-    def __init__(self, config, parent=None):
+    def __init__(self, config, parent_state, parent):
         super().__init__(parent)
+        self.setGeometry(300, 300, 380, 310)
         self.config = config
+        self.parent_state = parent_state
         self.setWindowTitle("Настройки")
 
-        self.log_level_input = QLineEdit(self)
-        self.log_level_input.setText(self.config["log_level"])
+        parent.state_changed.connect(self.handle_state_change)
 
-        self.log_path_input = QLineEdit(self)
-        self.log_path_input.setText(self.config["log_path"])
+        self.inputs = {}
 
-        self.save_button = QPushButton("Сохранить", self)
-        self.save_button.clicked.connect(self.save_settings)
+        main_layout = QVBoxLayout()
 
-        layout = QVBoxLayout()
-        layout.addWidget(QLabel("Уровень логирования:"))
-        layout.addWidget(self.log_level_input)
-        layout.addWidget(QLabel("Путь к логу:"))
-        layout.addWidget(self.log_path_input)
-        layout.addWidget(self.save_button)
+        scroll_area = QScrollArea(self)
+        scroll_area.setWidgetResizable(True)
+        scroll_widget = QWidget()
+        scroll_layout = QVBoxLayout(scroll_widget)
 
-        self.setLayout(layout)
+        labels = {
+            "broker_url": "Адрес брокера",
+            "log_path": "Путь к логу",
+            "request_queue": "Очередь запросов",
+            "response_queue": "Очередь ответов",
+            "log_level": "Уровень логирования",
+            "uuid": "UUID",
+            "connection_timeout": "Таймаут подключения",
+        }
+
+        log_levels = ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
+
+        for key, value in self.config.items():
+            row_layout = QHBoxLayout()
+            label = QLabel(labels[key], self)
+
+            if key == "connection_timeout":
+                input_field = QSpinBox(self)
+                input_field.setRange(1, 60)
+                input_field.setValue(int(value))
+
+            elif key in ["broker_url", "request_queue", "response_queue"]:
+                input_field = QLineEdit(self)
+                input_field.setText(str(value))
+                input_field.setReadOnly(True)
+
+            elif key == "log_level":
+                input_field = QComboBox(self)
+                input_field.addItems(log_levels)
+                input_field.setCurrentText(str(value))
+
+            elif key == "uuid":
+                input_field = QLineEdit(self)
+                input_field.setText(str(value))
+                generate_button = QPushButton("Сгенерировать", self)
+                generate_button.clicked.connect(lambda: self.generate_uuid(input_field))
+                row_layout.addWidget(generate_button)
+
+            else:
+                input_field = QLineEdit(self)
+                input_field.setText(str(value))
+
+            self.inputs[key] = input_field
+            row_layout.addWidget(label)
+            row_layout.addWidget(input_field)
+            scroll_layout.addLayout(row_layout)
+
+        scroll_area.setWidget(scroll_widget)
+        main_layout.addWidget(scroll_area)
+
+        save_button = QPushButton("Сохранить", self)
+        save_button.clicked.connect(self.save_settings)
+        main_layout.addWidget(save_button)
+
+        self.setLayout(main_layout)
 
     def save_settings(self):
-        self.config["log_level"] = self.log_level_input.text()
-        self.config["log_path"] = self.log_path_input.text()
-        self.settings_updated.emit(self.config)  # Отправляем обновленные данные родительскому окну
-        self.accept()
+        if self.parent_state == ClientState.WAITING:
+            QMessageBox.warning(self, "Запрещено", "Нельзя изменять настройки в состоянии ОЖИДАНИЯ.")
+            return
+        for key, input_field in self.inputs.items():
+            if isinstance(input_field, QSpinBox):
+                self.config[key] = input_field.value()
+            elif isinstance(input_field, QComboBox):
+                self.config[key] = input_field.currentText()
+            else:
+                self.config[key] = input_field.text()
+        self.settings_updated.emit(self.config)
+        self.close()
+
+    def handle_state_change(self, state):
+        self.parent_state = ClientState.READY
+
+    @staticmethod
+    def generate_uuid(input_field):
+        new_uuid = str(uuid.uuid4())
+        input_field.setText(new_uuid)
 
 
 if __name__ == "__main__":

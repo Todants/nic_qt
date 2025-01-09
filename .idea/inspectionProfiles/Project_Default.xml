@@ -1,0 +1,57 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="required" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="coworking.main.models.Users.objects" />
+          <option value="coworking.main.models.Businesses.objects" />
+          <option value="coworking.main.models.CoworkingSpaces.objects" />
+          <option value="coworking.main.models.Images.objects" />
+          <option value="coworking.main.models.Services.objects" />
+          <option value="coworking.main.models.Bookings.*" />
+          <option value="EchoBet.main.models.Accounts.objects" />
+          <option value="EchoBet.EchoBet.urls.main" />
+          <option value="EchoBet.main.models.APIKeys.objects" />
+          <option value="EchoBet.main.models.Listeners.objects" />
+          <option value="psycopg2" />
+          <option value="telebot" />
+          <option value="EchoBet_tg.bybit.pybit" />
+          <option value="requests" />
+          <option value="EchoBet_tg.echo_bot.pybit" />
+          <option value="aiohttp" />
+          <option value="tinder_parse.logic.selenium" />
+          <option value="tinder_parse.mail.bs4" />
+          <option value="tinder_parse.mail.selenium" />
+          <option value="GUI.browser.selenium" />
+          <option value="undetected_chromedriver" />
+          <option value="droneMarket.main.models.Accounts.objects" />
+          <option value="droneMarket.main.models.Images.objects" />
+          <option value="droneMarket.main.models.Products.objects" />
+          <option value="droneMarket.main.models.Reviews.objects" />
+          <option value="droneMarket.main.models.Likes.objects" />
+          <option value="server.src.main.src" />
+          <option value="server.dream_note.dream_note.urls.main" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

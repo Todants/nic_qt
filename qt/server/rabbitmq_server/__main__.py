@@ -1,32 +1,37 @@
 import asyncio
 import logging
-import os
-import sys
-
 import yaml
 from aio_pika import connect, IncomingMessage, Message, ExchangeType
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../protos')))
-from messages_pb2 import Request, Response
-from utils import double_number
-
+from qt.protos import messages_pb2
+from qt.server.rabbitmq_server.utils import double_number
 
 with open("../../config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
-logging.basicConfig(
-    level=getattr(logging, config["log_level"]),
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler(config["log_path"]),
-        logging.StreamHandler()
-    ]
-)
+
+def setup_logging(log_level, log_path):
+    root_logger = logging.getLogger()
+    for handler in root_logger.handlers[:]:
+        root_logger.removeHandler(handler)
+
+    file_handler = logging.FileHandler(log_path, encoding="utf-8")
+    stream_handler = logging.StreamHandler()
+
+    logging.basicConfig(
+        level=getattr(logging, log_level),
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[file_handler, stream_handler]
+    )
+    logging.info("Логирование обновлено")
+
+
+# Первоначальная настройка
+setup_logging(config["log_level"], config["log_path"])
 
 
 async def handle_request(message: IncomingMessage):
     async with message.process():
-        request = Request()
+        request = messages_pb2.Request()
         request.ParseFromString(message.body)
         logging.info(f"Получен запрос {request}")
 
@@ -41,7 +46,7 @@ async def handle_request(message: IncomingMessage):
         channel = await connection.channel()
 
         return_address = request.return_address
-        response_message = Response(
+        response_message = messages_pb2.Response(
             request_id=request.request_id,
             response=double_number(request.request)
         )
@@ -54,7 +59,27 @@ async def handle_request(message: IncomingMessage):
         logging.info(f"Ответ отправлен в {return_address}: {response_data}")
 
 
+async def monitor_config_changes():
+    last_config = config.copy()
+
+    while True:
+        await asyncio.sleep(2)
+        try:
+            with open("../../config.yaml", "r") as file:
+                new_config = yaml.safe_load(file)
+
+            if (new_config["log_level"] != last_config["log_level"] or
+                    new_config["log_path"] != last_config["log_path"]):
+                setup_logging(new_config["log_level"], new_config["log_path"])
+                last_config.update(new_config)
+
+        except Exception as e:
+            logging.error(f"Ошибка чтения конфига: {e}")
+
+
 async def main():
+    asyncio.create_task(monitor_config_changes())
+
     while True:
         try:
             connection = await connect(config["broker_url"])

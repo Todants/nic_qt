@@ -2,6 +2,7 @@ import pika
 import logging
 from PyQt5.QtCore import QThread, pyqtSignal
 
+
 class RabbitMQWorker(QThread):
     response_received = pyqtSignal(str)
     error_occurred = pyqtSignal(str)

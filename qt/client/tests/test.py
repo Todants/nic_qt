@@ -1,9 +1,10 @@
 import sys
-import yaml
 import uuid
-from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLineEdit, QPushButton, QDialog, QLabel, QSpinBox, QDoubleSpinBox, QCheckBox, QTextEdit, QHBoxLayout
 
+import yaml
+from PyQt5.QtCore import pyqtSignal
+from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLineEdit, QPushButton, QDialog, QLabel, \
+    QSpinBox, QDoubleSpinBox, QCheckBox, QTextEdit, QHBoxLayout
 from client.rabbitmq_client.worker import RabbitMQWorker
 
 
@@ -16,10 +17,12 @@ def load_config():
         config = {"log_level": "INFO", "log_path": "/var/log/app.log"}
     return config
 
+
 # Функция для сохранения конфигурации в файл config.yaml
 def save_config(config):
     with open("config.yaml", "w") as file:
         yaml.dump(config, file)
+
 
 class MainWindow(QMainWindow):
     def init(self):
@@ -149,6 +152,7 @@ class SettingsDialog(QDialog):
         self.config["log_path"] = self.log_path_input.text()
         self.settings_updated.emit(self.config)  # Отправляем обновленные данные родительскому окну
         self.accept()
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
